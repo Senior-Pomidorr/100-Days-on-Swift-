@@ -12,14 +12,11 @@ struct MainView: View {
         NavigationStack {
             Form {
                 NavigationLink(destination: ContentView()) { 
-                                    Text("Lesson 1")
+                    Text("Lesson 1")
                 }
-               
-                
-//                NavigationLink {
-//
-//                }
-
+                NavigationLink(destination: Challenge()) {
+                    Text("Challenge")
+                }
             }
             .navigationTitle("100 Days of Swift")
         }

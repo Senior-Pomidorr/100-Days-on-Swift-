@@ -12,6 +12,7 @@
 		0D8C73402A64368E00D5325B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C733F2A64368E00D5325B /* Assets.xcassets */; };
 		0D8C73432A64368E00D5325B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C73422A64368E00D5325B /* Preview Assets.xcassets */; };
 		0D8C73662A67091700D5325B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C73652A67091700D5325B /* MainView.swift */; };
+		0D8C73692A671BF200D5325B /* Challenge .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C73682A671BF200D5325B /* Challenge .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0D8C733F2A64368E00D5325B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D8C73422A64368E00D5325B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D8C73652A67091700D5325B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0D8C73682A671BF200D5325B /* Challenge .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				0D8C733B2A64368C00D5325B /* CheckerApp.swift */,
 				0D8C73672A6716AD00D5325B /* Lession 1 */,
 				0D8C73652A67091700D5325B /* MainView.swift */,
+				0D8C73682A671BF200D5325B /* Challenge .swift */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -150,6 +153,7 @@
 			files = (
 				0D8C733E2A64368C00D5325B /* ContentView.swift in Sources */,
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
+				0D8C73692A671BF200D5325B /* Challenge .swift in Sources */,
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
