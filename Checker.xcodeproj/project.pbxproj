@@ -58,7 +58,7 @@
 				0D8C733B2A64368C00D5325B /* CheckerApp.swift */,
 				0D8C73672A6716AD00D5325B /* Lession 1 */,
 				0D8C73652A67091700D5325B /* MainView.swift */,
-				0D8C73682A671BF200D5325B /* Challenge .swift */,
+				0D8C736A2A69929E00D5325B /* Challenge  */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -79,6 +79,14 @@
 				0D8C733D2A64368C00D5325B /* ContentView.swift */,
 			);
 			path = "Lession 1";
+			sourceTree = "<group>";
+		};
+		0D8C736A2A69929E00D5325B /* Challenge  */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C73682A671BF200D5325B /* Challenge .swift */,
+			);
+			path = "Challenge ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
