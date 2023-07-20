@@ -45,7 +45,7 @@ struct Challenge: View {
                 }
                 .pickerStyle(.segmented)
             } header: {
-                Text("Choice converted")
+                Text("Choice convert unit")
             }
             
             Section {

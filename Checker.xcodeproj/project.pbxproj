@@ -13,6 +13,7 @@
 		0D8C73432A64368E00D5325B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C73422A64368E00D5325B /* Preview Assets.xcassets */; };
 		0D8C73662A67091700D5325B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C73652A67091700D5325B /* MainView.swift */; };
 		0D8C73692A671BF200D5325B /* Challenge .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C73682A671BF200D5325B /* Challenge .swift */; };
+		0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		0D8C73422A64368E00D5325B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0D8C73652A67091700D5325B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0D8C73682A671BF200D5325B /* Challenge .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge .swift"; sourceTree = "<group>"; };
+		0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,9 @@
 			children = (
 				0D8C733B2A64368C00D5325B /* CheckerApp.swift */,
 				0D8C73672A6716AD00D5325B /* Lession 1 */,
-				0D8C73652A67091700D5325B /* MainView.swift */,
 				0D8C736A2A69929E00D5325B /* Challenge  */,
+				0D8C73652A67091700D5325B /* MainView.swift */,
+				0D8C736D2A69A43600D5325B /* Lession 2 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -87,6 +90,14 @@
 				0D8C73682A671BF200D5325B /* Challenge .swift */,
 			);
 			path = "Challenge ";
+			sourceTree = "<group>";
+		};
+		0D8C736D2A69A43600D5325B /* Lession 2 */ = {
+			isa = PBXGroup;
+			children = (
+				0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */,
+			);
+			path = "Lession 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
 				0D8C73692A671BF200D5325B /* Challenge .swift in Sources */,
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
+				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
