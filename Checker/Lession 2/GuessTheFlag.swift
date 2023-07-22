@@ -11,6 +11,7 @@ struct GuessTheFlag: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0
+    @State private var countQuestions = 0
     @State var countres = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State var correctAnswer = Int.random(in: 0...2)
     var body: some View {
@@ -19,10 +20,9 @@ struct GuessTheFlag: View {
                 .init(color: Color(red: 0.1, green: 0.2, blue: 0.45), location: 0.3),
                 .init(color: Color(red: 0.76, green: 0.15, blue: 0.26), location: 0.3)
             ], center: .top, startRadius: 200, endRadius: 400)
-                .ignoresSafeArea()
+            .ignoresSafeArea()
             
             VStack {
-                Spacer()
                 Text("Guess the Flag")
                     .font(.largeTitle.bold())
                     .foregroundColor(.white)
@@ -39,6 +39,7 @@ struct GuessTheFlag: View {
                     ForEach(0..<3) { number in
                         Button {
                             flagTapped(number)
+                            progressGame(countQuestions: countQuestions)
                         } label: {
                             Image(countres[number])
                                 .renderingMode(.original)
@@ -63,25 +64,44 @@ struct GuessTheFlag: View {
             .padding(20)
         }
         .alert(scoreTitle, isPresented: $showingScore) {
-            Button("Continue", action: askQuestion)
+            if countQuestions == 8 {
+                Button("Repeat the game", action: repeatTheGame)
+            } else {
+                Button("Continue", action: askQuestion)
+            }
         } message: {
             Text("Your score is \(score)")
         }
     }
-    private func flagTapped(_ number: Int) {
+    func flagTapped(_ number: Int) {
         if number == correctAnswer {
-            scoreTitle = "Correct"
+            scoreTitle = "Correct "
             score += 1
         } else {
-            scoreTitle = "False"
+            scoreTitle = "False, this flag is - \(countres[number]) "
         }
         showingScore = true
+        countQuestions += 1
+        print(countQuestions)
     }
     
-    private func askQuestion() {
+    func askQuestion() {
         countres.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
+    
+    func progressGame(countQuestions: Int) {
+        if countQuestions == 8 {
+            scoreTitle = "The game is over"
+        }
+    }
+    func repeatTheGame() {
+        countQuestions = 0
+        score = 0
+        countres.shuffle()
+        correctAnswer = Int.random(in: 0...2)
+    }
+    
 }
 
 struct GuessTheFlag_Previews: PreviewProvider {
