@@ -7,6 +7,23 @@
 
 import SwiftUI
 
+struct LoadImage: View {
+    var images: String
+    var body: some View {
+        Image(images)
+            .renderingMode(.original)
+            .clipShape(Capsule())
+            .shadow(radius: 5)
+    }
+}
+
+struct BlueText: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .foregroundColor(.blue)
+    }
+}
+
 struct GuessTheFlag: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
@@ -34,6 +51,7 @@ struct GuessTheFlag: View {
                         Text(countres[correctAnswer])
                             .font(.largeTitle.weight(.semibold))
                             .bold()
+                            .makeBlue()
                     }
                     
                     ForEach(0..<3) { number in
@@ -41,10 +59,7 @@ struct GuessTheFlag: View {
                             flagTapped(number)
                             progressGame(countQuestions: countQuestions)
                         } label: {
-                            Image(countres[number])
-                                .renderingMode(.original)
-                                .clipShape(Capsule())
-                                .shadow(radius: 5)
+                            LoadImage(images: countres[number])
                         }
                     }
                 }
@@ -60,6 +75,7 @@ struct GuessTheFlag: View {
                     .foregroundColor(.white)
                     .font(.largeTitle.bold())
                 Spacer()
+                Spacer()
             }
             .padding(20)
         }
@@ -73,7 +89,7 @@ struct GuessTheFlag: View {
             Text("Your score is \(score)")
         }
     }
-    func flagTapped(_ number: Int) {
+    private func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct "
             score += 1
@@ -85,23 +101,28 @@ struct GuessTheFlag: View {
         print(countQuestions)
     }
     
-    func askQuestion() {
+    private func askQuestion() {
         countres.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
     
-    func progressGame(countQuestions: Int) {
+    private func progressGame(countQuestions: Int) {
         if countQuestions == 8 {
             scoreTitle = "The game is over"
         }
     }
-    func repeatTheGame() {
+    private func repeatTheGame() {
         countQuestions = 0
         score = 0
         countres.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
-    
+}
+
+extension View {
+    func makeBlue() -> some View {
+        modifier(BlueText())
+    }
 }
 
 struct GuessTheFlag_Previews: PreviewProvider {

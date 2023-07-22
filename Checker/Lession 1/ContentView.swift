@@ -61,6 +61,7 @@ struct ContentView: View {
                 
                 Section {
                     Text(totalAmounthTheCheck, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                        .foregroundColor(checkAmounth == 0 ? .red : .black)
                 } header: {
                     Text("Total amount for the check")
                 }
