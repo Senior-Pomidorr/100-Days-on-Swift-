@@ -28,9 +28,12 @@ struct ChallengeTwo: View {
     }
     
     @State private var pictures = ["Rock", "Paper", "Scissors"].shuffled()
-    @State private var random = Int.random(in: 0...2)
-    private var yourScore = 0
-    private var computerScore = 0
+    @State private var userRandom = Int.random(in: 0...2)
+    @State private var infoView = ""
+    @State private var shouldWin = false
+    @State private var yourScore = 0
+    @State private var scoreAlert = false
+    @State private var countQuestions = 0
     
     var body: some View {
         ZStack {
@@ -38,9 +41,9 @@ struct ChallengeTwo: View {
                 .init(color: Color(red: 0.1, green: 0.5, blue: 0.99), location: 0.3),
                 .init(color: Color(red: 0.99, green: 0.30, blue: 0.00), location: 0.4)
             ], center: .top, startRadius: 400, endRadius: 500)
-                .ignoresSafeArea()
-            VStack(spacing: 15) {
-                Text("You win")
+            .ignoresSafeArea()
+            VStack(spacing: 12) {
+                Text("\(infoView)")
                     .font(.largeTitle.bold())
                     .font(.subheadline.weight(.heavy))
                     .foregroundColor(.white)
@@ -51,7 +54,7 @@ struct ChallengeTwo: View {
                 HStack {
                     ForEach(0..<3) { number in
                         Button {
-                            
+                            choiceItem(item: number)
                         } label: {
                             LoadImage(image: pictures[number])
                         }
@@ -59,64 +62,26 @@ struct ChallengeTwo: View {
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                     }
                 }
-                .padding(10)
+                .padding(30)
                 Text("Сomputer choice")
                     .font(.largeTitle.bold())
                     .font(.subheadline.weight(.heavy))
                     .foregroundColor(.white)
-                LoadImage(image: pictures[random])
+                    .padding(30)
+                LoadImage(image: pictures[userRandom])
                     .background(.thinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                HStack {
-                    Button {
-            
-                    } label: {
-                        Text("Yes")
-                            .frame(width: 100, height: 50)
-                            .font(.largeTitle.bold())
-                            .font(.subheadline.weight(.heavy))
-                            .foregroundColor(.white)
-                            .background(.green)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
-                            .padding(5)
-                            .shadow(radius: 5)
-                    }
-                    Button {
-                        
-                    } label: {
-                        Text("No")
-                            .frame(width: 100, height: 50)
-                            .font(.largeTitle.bold())
-                            .font(.subheadline.weight(.heavy))
-                            .foregroundColor(.white)
-                            .background(.teal)
-                            .clipShape(RoundedRectangle(cornerRadius: 20))
-                            .padding(5)
-                            .shadow(radius: 5)
-//                            .overlay(
-//                                        RoundedRectangle(cornerRadius: 20)
-//                                            .stroke(Color.white, lineWidth: 2) // Adjust the color and line width of the outline as needed
-//                                    )
-                    }
-                }
-    
-                VStack {
-                    Text("Your Score: ")
-                        .font(.headline.bold())
-                        .font(.subheadline.weight(.heavy))
-                        .foregroundColor(.white)
-                        .padding(10)
-                    Text("Computer Score: ")
-                        .font(.headline.bold())
-                        .font(.subheadline.weight(.heavy))
-                        .foregroundColor(.white)
-                }
-                .padding(10)
+                
+                Text("Your Score: \(yourScore)")
+                    .font(.headline.bold())
+                    .foregroundColor(.white)
+                    .font(.system(size: 60))
+                    .padding(10)
                 Button {
-                    
+                    repeatTheGame()
                 } label: {
-                    Text("Restart the game")
-                        .frame(width: 300, height: 50)
+                    Text("Restart")
+                        .frame(width: 300, height: 60)
                         .font(.largeTitle.bold())
                         .font(.subheadline.weight(.heavy))
                         .foregroundColor(.white)
@@ -127,7 +92,43 @@ struct ChallengeTwo: View {
                 Spacer()
                 Spacer()
             }
+            .alert(infoView, isPresented: $scoreAlert) {
+                if countQuestions == 8 {
+                    Button("Repeat the game", action: repeatTheGame)
+                } else {
+                    Button("Continue", action: askQuestion)
+                }
+            } message: {
+                Text("Your score is \(yourScore)")
+            }
+            .navigationBarTitleDisplayMode(.automatic)
         }
+    }
+    
+    private func choiceItem(item: Int) {
+        var didWin: Bool
+        if shouldWin {
+            didWin = item == userRandom
+        } else {
+            didWin = item == userRandom
+        }
+        if didWin {
+            yourScore += 1
+            askQuestion()
+        } else {
+            yourScore -= 1
+            askQuestion()
+        }
+        scoreAlert = true
+    }
+    
+    private func askQuestion() {
+        pictures.shuffle()
+        userRandom = Int.random(in: 0...2)
+    }
+    
+    private func repeatTheGame() {
+        yourScore = 0
     }
 }
 

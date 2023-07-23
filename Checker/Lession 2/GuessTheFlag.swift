@@ -91,7 +91,7 @@ struct GuessTheFlag: View {
     }
     private func flagTapped(_ number: Int) {
         if number == correctAnswer {
-            scoreTitle = "Correct "
+            scoreTitle = "Correct"
             score += 1
         } else {
             scoreTitle = "False, this flag is - \(countres[number]) "
