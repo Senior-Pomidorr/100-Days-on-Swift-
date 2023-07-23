@@ -29,8 +29,8 @@ struct GuessTheFlag: View {
     @State private var scoreTitle = ""
     @State private var score = 0
     @State private var countQuestions = 0
-    @State var countres = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
-    @State var correctAnswer = Int.random(in: 0...2)
+    @State private var countres = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+    @State private var correctAnswer = Int.random(in: 0...2)
     var body: some View {
         ZStack {
             RadialGradient(stops: [
