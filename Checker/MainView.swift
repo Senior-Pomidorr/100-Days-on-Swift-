@@ -20,6 +20,9 @@ struct MainView: View {
                 NavigationLink(destination: GuessTheFlag()) {
                     Text("Project 2: Day 20-22")
                 }
+                NavigationLink(destination: ChallengeTwo()) {
+                    Text("Challenge: The Game")
+                }
             }
             .navigationTitle("100 Days of Swift")
         }

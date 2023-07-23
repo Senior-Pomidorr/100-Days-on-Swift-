@@ -10,14 +10,14 @@ import Foundation
 
 struct Challenge: View {
     
-    enum unitSymbol: String {
+    enum UnitSymbol: String {
         case celsius = "° C"
         case farenheit = "° F"
         case kelvin = "° K"
     }
     @State private var defaultValue = 0.0
-    @State private var selectedUnit: unitSymbol = .celsius
-    @State private var convertedUnit: unitSymbol = .farenheit
+    @State private var selectedUnit: UnitSymbol = .celsius
+    @State private var convertedUnit: UnitSymbol = .farenheit
     
     private var celsius = UnitTemperature.celsius
     private let fahrenheit = UnitTemperature.fahrenheit
@@ -39,9 +39,9 @@ struct Challenge: View {
             
             Section {
                 Picker("Choice converted", selection: $selectedUnit) {
-                    Text(unitSymbol.celsius.rawValue).tag(unitSymbol.celsius)
-                    Text(unitSymbol.farenheit.rawValue).tag(unitSymbol.farenheit)
-                    Text(unitSymbol.kelvin.rawValue).tag(unitSymbol.kelvin)
+                    Text(UnitSymbol.celsius.rawValue).tag(UnitSymbol.celsius)
+                    Text(UnitSymbol.farenheit.rawValue).tag(UnitSymbol.farenheit)
+                    Text(UnitSymbol.kelvin.rawValue).tag(UnitSymbol.kelvin)
                 }
                 .pickerStyle(.segmented)
             } header: {
@@ -50,9 +50,9 @@ struct Challenge: View {
             
             Section {
                 Picker("Choice converted", selection: $convertedUnit) {
-                    Text(unitSymbol.celsius.rawValue).tag(unitSymbol.celsius)
-                    Text(unitSymbol.farenheit.rawValue).tag(unitSymbol.farenheit)
-                    Text(unitSymbol.kelvin.rawValue).tag(unitSymbol.kelvin)
+                    Text(UnitSymbol.celsius.rawValue).tag(UnitSymbol.celsius)
+                    Text(UnitSymbol.farenheit.rawValue).tag(UnitSymbol.farenheit)
+                    Text(UnitSymbol.kelvin.rawValue).tag(UnitSymbol.kelvin)
                 }
                 .pickerStyle(.segmented)
             } header: {
@@ -69,7 +69,7 @@ struct Challenge: View {
     }
 }
 
-extension Challenge.unitSymbol {
+extension Challenge.UnitSymbol {
     func toUnit() -> UnitTemperature {
         switch self {
         case .celsius:

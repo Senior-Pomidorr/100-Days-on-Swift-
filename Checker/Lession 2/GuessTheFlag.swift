@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoadImage: View {
+private struct LoadImage: View {
     var images: String
     var body: some View {
         Image(images)
