@@ -52,8 +52,7 @@ struct ChallengeTwo: View {
     @State private var yourScore = 0
     @State private var scoreAlert = false
     @State private var countQuestions = 0
-    @State private var userChoice: UnitChoice = .rock
-    @State private var computerChoice: UnitChoice = .rock
+    @State private var compChoices = Int.random(in: 0..<3)
 
     
     var body: some View {
@@ -75,7 +74,7 @@ struct ChallengeTwo: View {
                 HStack {
                     ForEach(0..<3) { number in
                         Button {
-                            choiceItem(item: number)
+                            play(choices: number)
                         } label: {
                             LoadImage(image: pictures[number])
                         }
@@ -89,7 +88,7 @@ struct ChallengeTwo: View {
                     .font(.subheadline.weight(.heavy))
                     .foregroundColor(.white)
                     .padding(30)
-                LoadImage(image: pictures[userRandom])
+                LoadImage(image: pictures[compChoices])
                     .background(.thinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                 
@@ -117,7 +116,7 @@ struct ChallengeTwo: View {
                 if countQuestions == 8 {
                     Button("Repeat the game", action: repeatTheGame)
                 } else {
-                    Button("Continue", action: question)
+                    Button("Continue", action: playGame)
                 }
             } message: {
                 Text("Your score is \(yourScore)")
@@ -126,26 +125,33 @@ struct ChallengeTwo: View {
         }
     }
     
-    private func choiceItem(item: Int) {
-            userChoice = randomSign(numberIn: item)
-            computerChoice = UnitChoice(rawValue: Int.random(in: 0...2))!
+    func playGame() {
+               compChoices = Int.random(in: 0..<3)
+               shouldWin.toggle()
+                countQuestions += 1
+           }
+
+    
+    func play(choices: Int) {
+                let winningMoves = [1, 2, 0]
+                let didWin: Bool
+
+                if shouldWin {
+                    didWin = choices == winningMoves[compChoices]
+                } else {
+                    didWin = winningMoves[choices] == compChoices
+                }
+                if didWin {
+                    yourScore += 1
+                    infoView = "You win"
+                } else {
+                    yourScore -= 1
+                    infoView = "You lose"
+                }
             
-            let result = userChoice.getResult(choice: computerChoice)
-            switch result {
-            case UnitChoice.Status.Win.rawValue:
-                yourScore += 1
-                infoView = "You Win!"
-            case UnitChoice.Status.Lose.rawValue:
-                yourScore -= 1
-                infoView = "You Lose!"
-            case UnitChoice.Status.Draw.rawValue:
-                infoView = "It's a Draw!"
-            default:
-                break
+                scoreAlert = true
+                playGame()
             }
-            scoreAlert = true
-            print(pictures)
-        }
 
 
 
@@ -160,18 +166,6 @@ struct ChallengeTwo: View {
         countQuestions = 0
     }
     
-    func randomSign(numberIn: Int) -> UnitChoice {
-        if numberIn == 0 {
-            print("rock")
-            return .rock
-        } else if numberIn == 1 {
-            print("paper")
-            return .paper
-        } else {
-            print("scissors")
-            return .scissors
-        }
-    }
 }
 
 struct ChallengeTwo_Previews: PreviewProvider {
