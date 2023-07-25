@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GameplayKit
 
 private struct LoadImage: View {
     var image: String
@@ -21,19 +22,39 @@ private struct LoadImage: View {
 
 struct ChallengeTwo: View {
     
-    enum UnitChoice: String {
-        case rock = "Rock"
-        case paper = "Paper"
-        case scissors = "Scissors"
+    enum UnitChoice: Int {
+        case rock = 0
+        case paper = 1
+        case scissors = 2
+        
+        enum Status: String {
+            case Win
+            case Lose
+            case Draw
+        }
+        
+        func getResult(choice: UnitChoice) -> String {
+            switch (self, choice) {
+            case (.rock, .rock), (.paper, .paper), (.scissors, .scissors):
+                return Status.Draw.rawValue
+            case (.rock, .scissors), (.paper, .rock), (.scissors, .paper):
+                return Status.Win.rawValue
+            default:
+                return Status.Lose.rawValue
+            }
+        }
     }
     
-    @State private var pictures = ["Rock", "Paper", "Scissors"].shuffled()
+    @State private var pictures = ["Rock", "Paper", "Scissors"]
     @State private var userRandom = Int.random(in: 0...2)
     @State private var infoView = ""
     @State private var shouldWin = false
     @State private var yourScore = 0
     @State private var scoreAlert = false
     @State private var countQuestions = 0
+    @State private var userChoice: UnitChoice = .rock
+    @State private var computerChoice: UnitChoice = .rock
+
     
     var body: some View {
         ZStack {
@@ -96,7 +117,7 @@ struct ChallengeTwo: View {
                 if countQuestions == 8 {
                     Button("Repeat the game", action: repeatTheGame)
                 } else {
-                    Button("Continue", action: askQuestion)
+                    Button("Continue", action: question)
                 }
             } message: {
                 Text("Your score is \(yourScore)")
@@ -106,29 +127,50 @@ struct ChallengeTwo: View {
     }
     
     private func choiceItem(item: Int) {
-        var didWin: Bool
-        if shouldWin {
-            didWin = item == userRandom
-        } else {
-            didWin = item == userRandom
+            userChoice = randomSign(numberIn: item)
+            computerChoice = UnitChoice(rawValue: Int.random(in: 0...2))!
+            
+            let result = userChoice.getResult(choice: computerChoice)
+            switch result {
+            case UnitChoice.Status.Win.rawValue:
+                yourScore += 1
+                infoView = "You Win!"
+            case UnitChoice.Status.Lose.rawValue:
+                yourScore -= 1
+                infoView = "You Lose!"
+            case UnitChoice.Status.Draw.rawValue:
+                infoView = "It's a Draw!"
+            default:
+                break
+            }
+            scoreAlert = true
+            print(pictures)
         }
-        if didWin {
-            yourScore += 1
-            askQuestion()
-        } else {
-            yourScore -= 1
-            askQuestion()
-        }
-        scoreAlert = true
-    }
-    
-    private func askQuestion() {
+
+
+
+    private func question() {
         pictures.shuffle()
         userRandom = Int.random(in: 0...2)
     }
     
     private func repeatTheGame() {
+        pictures.shuffle()
         yourScore = 0
+        countQuestions = 0
+    }
+    
+    func randomSign(numberIn: Int) -> UnitChoice {
+        if numberIn == 0 {
+            print("rock")
+            return .rock
+        } else if numberIn == 1 {
+            print("paper")
+            return .paper
+        } else {
+            print("scissors")
+            return .scissors
+        }
     }
 }
 
