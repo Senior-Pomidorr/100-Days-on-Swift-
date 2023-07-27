@@ -53,7 +53,7 @@ struct ChallengeTwo: View {
     @State private var scoreAlert = false
     @State private var countQuestions = 0
     @State private var compChoices = Int.random(in: 0..<3)
-
+    
     
     var body: some View {
         ZStack {
@@ -126,35 +126,35 @@ struct ChallengeTwo: View {
     }
     
     func playGame() {
-               compChoices = Int.random(in: 0..<3)
-               shouldWin.toggle()
-                countQuestions += 1
-           }
-
+        compChoices = Int.random(in: 0..<3)
+        shouldWin.toggle()
+        countQuestions += 1
+    }
+    
     
     func play(choices: Int) {
-                let winningMoves = [1, 2, 0]
-                let didWin: Bool
-
-                if shouldWin {
-                    didWin = choices == winningMoves[compChoices]
-                } else {
-                    didWin = winningMoves[choices] == compChoices
-                }
-                if didWin {
-                    yourScore += 1
-                    infoView = "You win"
-                } else {
-                    yourScore -= 1
-                    infoView = "You lose"
-                }
-            
-                scoreAlert = true
-                playGame()
-            }
-
-
-
+        let winningMoves = [1, 2, 0]
+        let didWin: Bool
+        
+        if shouldWin {
+            didWin = choices == winningMoves[compChoices]
+        } else {
+            didWin = winningMoves[choices] == compChoices
+        }
+        if didWin {
+            yourScore += 1
+            infoView = "You win"
+        } else {
+            yourScore -= 1
+            infoView = "You lose"
+        }
+        
+        scoreAlert = true
+        playGame()
+    }
+    
+    
+    
     private func question() {
         pictures.shuffle()
         userRandom = Int.random(in: 0...2)
@@ -165,6 +165,7 @@ struct ChallengeTwo: View {
         yourScore = 0
         countQuestions = 0
     }
+    
     
 }
 
