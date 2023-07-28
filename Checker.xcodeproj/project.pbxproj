@@ -15,7 +15,7 @@
 		0D8C73692A671BF200D5325B /* Challenge .swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C73682A671BF200D5325B /* Challenge .swift */; };
 		0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */; };
 		0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C736E2A6D518100D5325B /* ChallengeTwo.swift */; };
-		0DE93B8B2A7192F000648218 /* Stepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93B8A2A7192F000648218 /* Stepper.swift */; };
+		0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93B8A2A7192F000648218 /* StepperView.swift */; };
 		0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 		0D8C73682A671BF200D5325B /* Challenge .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Challenge .swift"; sourceTree = "<group>"; };
 		0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlag.swift; sourceTree = "<group>"; };
 		0D8C736E2A6D518100D5325B /* ChallengeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTwo.swift; sourceTree = "<group>"; };
-		0DE93B8A2A7192F000648218 /* Stepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stepper.swift; sourceTree = "<group>"; };
+		0DE93B8A2A7192F000648218 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +119,7 @@
 		0DE93B8C2A7192FD00648218 /* Lession 3 */ = {
 			isa = PBXGroup;
 			children = (
-				0DE93B8A2A7192F000648218 /* Stepper.swift */,
+				0DE93B8A2A7192F000648218 /* StepperView.swift */,
 				0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */,
 			);
 			path = "Lession 3";
@@ -196,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8C733E2A64368C00D5325B /* ContentView.swift in Sources */,
-				0DE93B8B2A7192F000648218 /* Stepper.swift in Sources */,
+				0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */,
 				0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */,
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
 				0D8C73692A671BF200D5325B /* Challenge .swift in Sources */,

@@ -24,7 +24,7 @@ struct MainView: View {
                     Text("Challenge: The Game")
                 }
                 NavigationLink(destination: StepperView()) {
-                    Text("Project 3: Day 26-27")
+                    Text("Project 3: Day 26-28")
                 }
             }
             .navigationTitle("100 Days of Swift")
