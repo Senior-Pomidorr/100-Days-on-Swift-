@@ -17,6 +17,8 @@
 		0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C736E2A6D518100D5325B /* ChallengeTwo.swift */; };
 		0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93B8A2A7192F000648218 /* StepperView.swift */; };
 		0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */; };
+		0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BB52A74106A00648218 /* WordScramble.swift */; };
+		0DE93BB92A75982D00648218 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DE93BB82A75982D00648218 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		0D8C736E2A6D518100D5325B /* ChallengeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTwo.swift; sourceTree = "<group>"; };
 		0DE93B8A2A7192F000648218 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		0DE93BB52A74106A00648218 /* WordScramble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScramble.swift; sourceTree = "<group>"; };
+		0DE93BB82A75982D00648218 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				0D8C736D2A69A43600D5325B /* Lession 2 */,
 				0D8C73702A6D518A00D5325B /* ChallengeTwo */,
 				0DE93B8C2A7192FD00648218 /* Lession 3 */,
+				0DE93BB72A74107500648218 /* Lession 4 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -123,6 +128,15 @@
 				0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */,
 			);
 			path = "Lession 3";
+			sourceTree = "<group>";
+		};
+		0DE93BB72A74107500648218 /* Lession 4 */ = {
+			isa = PBXGroup;
+			children = (
+				0DE93BB52A74106A00648218 /* WordScramble.swift */,
+				0DE93BB82A75982D00648218 /* start.txt */,
+			);
+			path = "Lession 4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D8C73432A64368E00D5325B /* Preview Assets.xcassets in Resources */,
+				0DE93BB92A75982D00648218 /* start.txt in Resources */,
 				0D8C73402A64368E00D5325B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +218,7 @@
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,
 				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
+				0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
