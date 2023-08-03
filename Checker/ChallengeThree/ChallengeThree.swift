@@ -20,7 +20,7 @@ struct ChallengeThree: View {
             RadialGradient(stops: [
                 .init(color: Color(red: 0.1, green: 0.1, blue: 0.45), location: 0.3),
                 .init(color: Color(red: 0.76, green: 0.85, blue: 0.1), location: 0.3)
-            ], center: .top, startRadius: 455, endRadius: 420)
+            ], center: .top, startRadius: 490, endRadius: 420)
             .ignoresSafeArea()
             VStack {
                 Text("How much will it be if \(buttonOneValue) is multiplied by \(buttonTwoValue)?")
@@ -32,8 +32,8 @@ struct ChallengeThree: View {
                 
                 HStack(spacing: 30) {
                     Label {
-                        Text("\(buttonOneTrueValue)")
-                            .frame(width: 90, height: 90)
+                        Text("\(buttonOneValue)")
+                            .frame(width: 80, height: 80)
                             .padding(30)
                     } icon: {}
                         .font(.system(size: 70))
@@ -42,8 +42,8 @@ struct ChallengeThree: View {
                         .foregroundColor(.white)
                     
                     Label {
-                        Text("\(buttonTwoFakeValue)")
-                            .frame(width:  90, height: 90)
+                        Text("\(buttonTwoValue)")
+                            .frame(width: 80, height: 80)
                             .padding(30)
                     } icon: {}
                         .font(.system(size: 70))
@@ -52,8 +52,8 @@ struct ChallengeThree: View {
                         .foregroundColor(.white)
                         .frame(width: 150, height: 150)
                 }
-                .padding(.vertical, 16)
-                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .padding(.horizontal, 20)
                 .background(
                     RoundedRectangle(cornerRadius: 20)
                         .fill(.thinMaterial)
@@ -72,8 +72,8 @@ struct ChallengeThree: View {
                 }
                 HStack(spacing: 30) {
                     Label {
-                        Text("\(buttonOneValue)")
-                            .frame(width: 90, height: 90)
+                        Text("\(buttonOneTrueValue)")
+                            .frame(width: 80, height: 80)
                             .padding(30)
                     } icon: {}
                         .font(.system(size: 70))
@@ -82,9 +82,8 @@ struct ChallengeThree: View {
                         .foregroundColor(.white)
                     
                     Label {
-                        Text("\(buttonTwoValue)")
-                            .frame(width:  90, height: 90)
-                            .padding(30)
+                        Text("\(buttonTwoFakeValue)")
+                            .frame(width: 80, height: 80)                            .padding(30)
                     } icon: {}
                         .font(.system(size: 70))
                         .background(.indigo)
@@ -93,8 +92,8 @@ struct ChallengeThree: View {
                         .frame(width: 150, height: 150)
                 }
                 
-                .padding(.vertical, 16)
-                .padding(.horizontal, 16)
+                .padding(.vertical, 10)
+                .padding(.horizontal, 20)
                 .background(
                     RoundedRectangle(cornerRadius: 20)
                         .fill(.thinMaterial)
@@ -111,6 +110,7 @@ struct ChallengeThree: View {
                 
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
