@@ -96,8 +96,8 @@ struct GuessTheFlag: View {
         } message: {
             Text("Your score is \(score)")
         }
-        
     }
+    
     private func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
@@ -113,6 +113,7 @@ struct GuessTheFlag: View {
     private func askQuestion() {
         countres.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        buttonOpacities = [1.0, 1.0, 1.0]
     }
     
     private func progressGame(countQuestions: Int) {
@@ -131,12 +132,8 @@ struct GuessTheFlag: View {
     private func flagButton(_ number: Int) {
         buttonOpacities = [0.25, 0.25, 0.25]
         buttonOpacities[correctAnswer] = 1.0
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            buttonOpacities = [1.0, 1.0, 1.0]
-        }
     }
 }
-
 
 extension View {
     func makeBlue() -> some View {
