@@ -25,10 +25,12 @@ struct BlueText: ViewModifier {
 }
 
 struct GuessTheFlag: View {
+    @State private var animationAmounth = 360
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0
     @State private var countQuestions = 0
+    @State private var buttonOpacities: [Double] = [1.0, 1.0, 1.0]
     @State private var countres = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
     var body: some View {
@@ -56,11 +58,17 @@ struct GuessTheFlag: View {
                     
                     ForEach(0..<3) { number in
                         Button {
+                            withAnimation() {
+                                animationAmounth += 360
+                            }
                             flagTapped(number)
                             progressGame(countQuestions: countQuestions)
+                            flagButton(number)
                         } label: {
                             LoadImage(images: countres[number])
                         }
+                        .rotation3DEffect(.degrees(Double(animationAmounth)), axis: (x: 0, y: 1, z: 0))
+                        .opacity(buttonOpacities[number])
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -88,6 +96,7 @@ struct GuessTheFlag: View {
         } message: {
             Text("Your score is \(score)")
         }
+        
     }
     private func flagTapped(_ number: Int) {
         if number == correctAnswer {
@@ -111,13 +120,23 @@ struct GuessTheFlag: View {
             scoreTitle = "The game is over"
         }
     }
+    
     private func repeatTheGame() {
         countQuestions = 0
         score = 0
         countres.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }
+    
+    private func flagButton(_ number: Int) {
+        buttonOpacities = [0.25, 0.25, 0.25]
+        buttonOpacities[correctAnswer] = 1.0
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            buttonOpacities = [1.0, 1.0, 1.0]
+        }
+    }
 }
+
 
 extension View {
     func makeBlue() -> some View {
