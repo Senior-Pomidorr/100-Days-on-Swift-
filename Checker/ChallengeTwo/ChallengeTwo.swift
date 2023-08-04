@@ -91,7 +91,6 @@ struct ChallengeTwo: View {
                 LoadImage(image: pictures[compChoices])
                     .background(.thinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
-                
                 Text("Your Score: \(yourScore)")
                     .font(.headline.bold())
                     .foregroundColor(.white)

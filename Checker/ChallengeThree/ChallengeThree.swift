@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ChallengeThree: View {
-    private var buttonOneValue = Int.random(in: 0...10)
-    private var buttonTwoValue = Int.random(in: 0...10)
-    private var correctAnswer = 0
-    private var buttonOneTrueValue = Int.random(in: 0...10)
-    private var buttonTwoFakeValue = Int.random(in: 0...10)
-    private var score = 0
+    @State private var buttonOneValue = Int.random(in: 0...10)
+    @State private var buttonTwoValue = Int.random(in: 0...10)
+    @State private var correctAnswer = 0
+    @State private var buttonOneTrueValue = 0
+    @State private var buttonTwoFakeValue = Int.random(in: 0...10)
+    @State private var score = 0
+    @State private var answer = false
+    
     
     var body: some View {
         ZStack {
@@ -36,7 +38,7 @@ struct ChallengeThree: View {
                             .frame(width: 80, height: 80)
                             .padding(30)
                     } icon: {}
-                        .font(.system(size: 70))
+                        .font(.system(size: 65))
                         .background(.mint)
                         .clipShape(Circle())
                         .foregroundColor(.white)
@@ -46,7 +48,7 @@ struct ChallengeThree: View {
                             .frame(width: 80, height: 80)
                             .padding(30)
                     } icon: {}
-                        .font(.system(size: 70))
+                        .font(.system(size: 65))
                         .background(.mint)
                         .clipShape(Circle())
                         .foregroundColor(.white)
@@ -70,28 +72,33 @@ struct ChallengeThree: View {
                         .padding([.bottom], 20)
                         .padding(.top, 40)
                 }
+                
                 HStack(spacing: 30) {
-                    Label {
+                    Button {
+                        checkAnswer(buttonNumber: 1)
+                    } label: {
                         Text("\(buttonOneTrueValue)")
                             .frame(width: 80, height: 80)
                             .padding(30)
-                    } icon: {}
-                        .font(.system(size: 70))
-                        .background(.indigo)
-                        .clipShape(Circle())
-                        .foregroundColor(.white)
+                            .font(.system(size: 65))
+                            .background(.indigo)
+                            .clipShape(Circle())
+                            .foregroundColor(.white)
+                    }
                     
-                    Label {
+                    Button {
+                        checkAnswer(buttonNumber: 2)
+                    } label: {
                         Text("\(buttonTwoFakeValue)")
-                            .frame(width: 80, height: 80)                            .padding(30)
-                    } icon: {}
-                        .font(.system(size: 70))
-                        .background(.indigo)
-                        .clipShape(Circle())
-                        .foregroundColor(.white)
-                        .frame(width: 150, height: 150)
+                            .frame(width: 80, height: 80)
+                            .padding(30)
+                            .font(.system(size: 65))
+                            .background(.indigo)
+                            .clipShape(Circle())
+                            .foregroundColor(.white)
+                            .frame(width: 150, height: 150)
+                    }
                 }
-                
                 .padding(.vertical, 10)
                 .padding(.horizontal, 20)
                 .background(
@@ -107,10 +114,43 @@ struct ChallengeThree: View {
                     .multilineTextAlignment(.center)
                     .padding([.leading, .trailing], 16)
                     .padding([.top], 10)
-                
             }
+            .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationBarTitleDisplayMode(.inline)
+    }
+    private func checkAnswer(buttonNumber: Int) {
+        buttonOneTrueValue = buttonOneValue * buttonTwoValue
+
+        if buttonOneValue * buttonTwoValue == buttonOneTrueValue {
+            score += 1
+        } else {
+            score -= 1
+        }
+        randomNumbers()
+        swapButtonValues()
+    }
+    
+    private func randomNumbers() {
+        buttonOneValue = Int.random(in: 0...10)
+        buttonTwoValue = Int.random(in: 0...10)
+        
+        let product = buttonOneValue * buttonTwoValue
+        buttonTwoFakeValue = product + Int.random(in: -3...3)
+        buttonOneTrueValue = product
+    }
+    
+    private func swapButtonValues() {
+        let randomNumber = Int.random(in: 0...1)
+           if randomNumber == 0 {
+               let tempValue = buttonOneTrueValue
+               buttonOneTrueValue = buttonTwoFakeValue
+               buttonTwoFakeValue = tempValue
+           } else {
+               let tempValue = buttonTwoFakeValue
+               buttonTwoFakeValue = buttonOneTrueValue
+               buttonOneTrueValue = tempValue
+           }
+      
     }
 }
 
