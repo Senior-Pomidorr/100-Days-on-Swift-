@@ -15,7 +15,17 @@ struct iExpense: View {
         NavigationStack {
             List {
                 ForEach(expenses.items) { item in
-                    Text(item.name)
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(item.name)
+                                .font(.headline)
+                            Text(item.name)
+                        }
+                        
+                        Spacer()
+                        
+                        Text(item.amounth, format: .currency(code: "USD"))
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
