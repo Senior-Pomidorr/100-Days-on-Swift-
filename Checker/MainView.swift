@@ -32,6 +32,9 @@ struct MainView: View {
                 NavigationLink(destination: ChallengeThree()) {
                     Text("Challenge: Multiplication table")
                 }
+                NavigationLink(destination: iExpense()) {
+                    Text("Project 4: Day 36-38")
+                }
             }
             .navigationTitle("100 Days of Swift")
         }

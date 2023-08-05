@@ -127,13 +127,12 @@ struct ChallengeThree: View {
             score -= 1
         }
         randomNumbers()
-        swapButtonValues()
     }
     
     private func randomNumbers() {
         buttonOneValue = Int.random(in: 0...10)
         buttonTwoValue = Int.random(in: 0...10)
-        
+        swapButtonValues()
         let product = buttonOneValue * buttonTwoValue
         buttonTwoFakeValue = product + Int.random(in: -3...3)
         buttonOneTrueValue = product
@@ -150,7 +149,6 @@ struct ChallengeThree: View {
                buttonTwoFakeValue = buttonOneTrueValue
                buttonOneTrueValue = tempValue
            }
-      
     }
 }
 

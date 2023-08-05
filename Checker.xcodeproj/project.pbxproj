@@ -20,6 +20,10 @@
 		0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BB52A74106A00648218 /* WordScramble.swift */; };
 		0DE93BB92A75982D00648218 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0DE93BB82A75982D00648218 /* start.txt */; };
 		0DE93BBB2A78099800648218 /* ChallengeThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BBA2A78099800648218 /* ChallengeThree.swift */; };
+		0DE93BBE2A7D9D7500648218 /* iExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BBD2A7D9D7500648218 /* iExpense.swift */; };
+		0DE93BC12A7E8D9200648218 /* ExpensItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BC02A7E8D9200648218 /* ExpensItem.swift */; };
+		0DE93BC32A7E8E0700648218 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BC22A7E8E0700648218 /* Expenses.swift */; };
+		0DE93BC52A7EA14A00648218 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BC42A7EA14A00648218 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,10 @@
 		0DE93BB52A74106A00648218 /* WordScramble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScramble.swift; sourceTree = "<group>"; };
 		0DE93BB82A75982D00648218 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = "<group>"; };
 		0DE93BBA2A78099800648218 /* ChallengeThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeThree.swift; sourceTree = "<group>"; };
+		0DE93BBD2A7D9D7500648218 /* iExpense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iExpense.swift; sourceTree = "<group>"; };
+		0DE93BC02A7E8D9200648218 /* ExpensItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensItem.swift; sourceTree = "<group>"; };
+		0DE93BC22A7E8E0700648218 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		0DE93BC42A7EA14A00648218 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,7 @@
 				0DE93B8C2A7192FD00648218 /* Lession 3 */,
 				0DE93BB72A74107500648218 /* Lession 4 */,
 				0DE93BBC2A7809A300648218 /* ChallengeThree */,
+				0DE93BBF2A7D9D8300648218 /* Lession 5 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -148,6 +157,17 @@
 				0DE93BBA2A78099800648218 /* ChallengeThree.swift */,
 			);
 			path = ChallengeThree;
+			sourceTree = "<group>";
+		};
+		0DE93BBF2A7D9D8300648218 /* Lession 5 */ = {
+			isa = PBXGroup;
+			children = (
+				0DE93BBD2A7D9D7500648218 /* iExpense.swift */,
+				0DE93BC42A7EA14A00648218 /* AddView.swift */,
+				0DE93BC02A7E8D9200648218 /* ExpensItem.swift */,
+				0DE93BC22A7E8E0700648218 /* Expenses.swift */,
+			);
+			path = "Lession 5";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,14 +241,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE93BC52A7EA14A00648218 /* AddView.swift in Sources */,
+				0DE93BBE2A7D9D7500648218 /* iExpense.swift in Sources */,
 				0D8C733E2A64368C00D5325B /* ContentView.swift in Sources */,
 				0DE93BBB2A78099800648218 /* ChallengeThree.swift in Sources */,
+				0DE93BC32A7E8E0700648218 /* Expenses.swift in Sources */,
 				0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */,
 				0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */,
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
 				0D8C73692A671BF200D5325B /* Challenge .swift in Sources */,
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,
+				0DE93BC12A7E8D9200648218 /* ExpensItem.swift in Sources */,
 				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
 				0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */,
 			);
