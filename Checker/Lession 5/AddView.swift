@@ -28,8 +28,14 @@ struct AddView: View {
                 TextField("Amounth", value: $amounth, format: .currency(code: "USD"))
                     .keyboardType(.decimalPad)
             }
+            .navigationTitle("Add new expense")
+            .toolbar {
+                Button("Save") {
+                    let item = ExpenseItem(name: name, type: type, amounth: amounth)
+                    expeses.items.append(item)
+                }
+            }
         }
-        .navigationTitle("Add new expense")
     }
 }
 
