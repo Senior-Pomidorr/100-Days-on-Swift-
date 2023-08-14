@@ -19,7 +19,7 @@ struct iExpense: View {
                         VStack(alignment: .leading) {
                             Text(item.name)
                                 .font(.headline)
-                            Text(item.name)
+                            Text(item.type)
                         }
                         
                         Spacer()
