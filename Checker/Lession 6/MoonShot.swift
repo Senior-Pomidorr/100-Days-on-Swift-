@@ -22,7 +22,7 @@ struct MoonShot: View {
                 LazyVGrid(columns: columns) {
                     ForEach(missions) { mission in
                         NavigationLink {
-                            Text("DetailView")
+                            MissionView(mission: mission, astronauts: astronauts)
                         } label: {
                             VStack {
                                 Image(mission.image)
@@ -53,10 +53,10 @@ struct MoonShot: View {
                 }
                 .padding([.horizontal, .bottom])
             }
-            .navigationTitle("Moonshot")
-            .background(.darkBackground)
-            .preferredColorScheme(.dark)
         }
+        .navigationTitle("Moonshot")
+        .background(.darkBackground)
+        .preferredColorScheme(.dark)
     }
 }
 
