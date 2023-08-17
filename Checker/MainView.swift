@@ -38,6 +38,9 @@ struct MainView: View {
                 NavigationLink(destination: MoonShot()) {
                     Text("Project 6: Day 39-42")
                 }
+                NavigationLink(destination: Drawing()) {
+                    Text("Challenge: Drawing")
+                }
             }
             .navigationTitle("100 Days of Swift")
         }

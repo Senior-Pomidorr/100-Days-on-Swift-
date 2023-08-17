@@ -33,6 +33,7 @@
 		0DFC88602A8ABD9D00FBD841 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC885F2A8ABD9D00FBD841 /* Color-Theme.swift */; };
 		0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC88632A8BB9F700FBD841 /* MissionView.swift */; };
 		0DFC88662A8BD61F00FBD841 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC88652A8BD61F00FBD841 /* AstronautView.swift */; };
+		0DFC88682A8BEB0300FBD841 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC88672A8BEB0300FBD841 /* Drawing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		0DFC885F2A8ABD9D00FBD841 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		0DFC88632A8BB9F700FBD841 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		0DFC88652A8BD61F00FBD841 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+		0DFC88672A8BEB0300FBD841 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				0DE93BBC2A7809A300648218 /* ChallengeThree */,
 				0DE93BBF2A7D9D8300648218 /* Lession 5 */,
 				0DE93BC82A7FECE300648218 /* Lession 6 */,
+				0DFC88692A8BEB0900FBD841 /* Lession 7 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -205,6 +208,14 @@
 			path = "Lession 6";
 			sourceTree = "<group>";
 		};
+		0DFC88692A8BEB0900FBD841 /* Lession 7 */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC88672A8BEB0300FBD841 /* Drawing.swift */,
+			);
+			path = "Lession 7";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,6 +299,7 @@
 				0DFC88662A8BD61F00FBD841 /* AstronautView.swift in Sources */,
 				0DE93BC32A7E8E0700648218 /* Expenses.swift in Sources */,
 				0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */,
+				0DFC88682A8BEB0300FBD841 /* Drawing.swift in Sources */,
 				0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */,
 				0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */,
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
