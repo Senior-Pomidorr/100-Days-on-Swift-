@@ -20,10 +20,18 @@ struct Drawing: View {
     var body: some View {
         ZStack {
             RadialGradient(stops: [
-                .init(color: Color(red: 0.2, green: 0.1, blue: 0.8), location: 0.3),
-                .init(color: Color(red: 1.0, green: 0.3, blue: 1.0), location: 0.4)
+                .init(color: Color(red: 0.2, green: 0.1, blue: 0.8), location: 0.5),
+                .init(color: Color(red: 1.0, green: 0.3, blue: 1.0), location: 0.2)
             ], center: .top, startRadius: 450, endRadius: 420)
             .ignoresSafeArea()
+            
+            Text("Move forward!")
+                .offset(y: -350)
+//                .font(.largeTitle)
+                .font(.system(size: 36))
+                .foregroundColor(.white)
+                .shadow(radius: 2)
+            
             ForEach(0..<steps) { value in
                 Circle()
                     .inset(by: Double(value))
