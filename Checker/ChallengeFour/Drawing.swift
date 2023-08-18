@@ -27,7 +27,6 @@ struct Drawing: View {
             
             Text("Move forward!")
                 .offset(y: -350)
-//                .font(.largeTitle)
                 .font(.system(size: 36))
                 .foregroundColor(.white)
                 .shadow(radius: 2)
