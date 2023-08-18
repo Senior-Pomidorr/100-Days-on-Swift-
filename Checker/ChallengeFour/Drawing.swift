@@ -21,7 +21,7 @@ struct Drawing: View {
         ZStack {
             RadialGradient(stops: [
                 .init(color: Color(red: 0.2, green: 0.1, blue: 0.8), location: 0.5),
-                .init(color: Color(red: 1.0, green: 0.3, blue: 1.0), location: 0.2)
+                .init(color: Color(red: 1.0, green: 0.3, blue: 1.0), location: 0.7)
             ], center: .top, startRadius: 450, endRadius: 420)
             .ignoresSafeArea()
             

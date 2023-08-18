@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */; };
+		0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */; };
+		0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */; };
 		0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C733B2A64368C00D5325B /* CheckerApp.swift */; };
 		0D8C733E2A64368C00D5325B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C733D2A64368C00D5325B /* ContentView.swift */; };
 		0D8C73402A64368E00D5325B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C733F2A64368E00D5325B /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTracking.swift; sourceTree = "<group>"; };
+		0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
+		0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		0D8C73382A64368C00D5325B /* Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8C733B2A64368C00D5325B /* CheckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerApp.swift; sourceTree = "<group>"; };
 		0D8C733D2A64368C00D5325B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D7F7CEB2A8FCA2B0017EF35 /* ChallengeFive */ = {
+			isa = PBXGroup;
+			children = (
+				0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */,
+				0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */,
+				0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */,
+			);
+			path = ChallengeFive;
+			sourceTree = "<group>";
+		};
 		0D8C732F2A64368C00D5325B = {
 			isa = PBXGroup;
 			children = (
@@ -108,7 +124,8 @@
 				0DE93BBC2A7809A300648218 /* ChallengeThree */,
 				0DE93BBF2A7D9D8300648218 /* Lession 5 */,
 				0DE93BC82A7FECE300648218 /* Lession 6 */,
-				0DFC88692A8BEB0900FBD841 /* Lession 7 */,
+				0DFC88692A8BEB0900FBD841 /* ChallengeFour */,
+				0D7F7CEB2A8FCA2B0017EF35 /* ChallengeFive */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -208,12 +225,12 @@
 			path = "Lession 6";
 			sourceTree = "<group>";
 		};
-		0DFC88692A8BEB0900FBD841 /* Lession 7 */ = {
+		0DFC88692A8BEB0900FBD841 /* ChallengeFour */ = {
 			isa = PBXGroup;
 			children = (
 				0DFC88672A8BEB0300FBD841 /* Drawing.swift */,
 			);
-			path = "Lession 7";
+			path = ChallengeFour;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +308,7 @@
 			files = (
 				0DE93BD42A7FFEE900648218 /* Bundle-Decodable.swift in Sources */,
 				0DE93BC52A7EA14A00648218 /* AddView.swift in Sources */,
+				0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */,
 				0DE93BD22A7FFCD800648218 /* Astrounaut.swift in Sources */,
 				0DE93BBE2A7D9D7500648218 /* iExpense.swift in Sources */,
 				0D8C733E2A64368C00D5325B /* ContentView.swift in Sources */,
@@ -301,6 +319,8 @@
 				0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */,
 				0DFC88682A8BEB0300FBD841 /* Drawing.swift in Sources */,
 				0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */,
+				0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */,
+				0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */,
 				0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */,
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
 				0DE93BC72A7FECBA00648218 /* MoonShot.swift in Sources */,
