@@ -19,13 +19,11 @@ struct ActivityTracking: View {
                         VStack(alignment: .leading) {
                             Text(item.name)
                                 .font(.system(size: 24))
-                                
+                            
                             Text(String(item.amounth))
                                 .font(.system(size: 22))
-                                
-                                
                         }
-                        
+//                        
                         Spacer()
                         
                         Text(String(item.workoutTime))
@@ -33,6 +31,7 @@ struct ActivityTracking: View {
                     }
                     .frame(height: 70)
                 }
+                .onDelete(perform: removeItems)
             }
             .toolbar {
                 Button {
@@ -45,6 +44,9 @@ struct ActivityTracking: View {
                 ShowExercises(exercises: exercises)
             }
         }
+    }
+    func removeItems(at offsets: IndexSet) {
+        exercises.items.remove(atOffsets: offsets)
     }
 }
 
