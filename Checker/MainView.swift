@@ -45,14 +45,11 @@ struct MainView: View {
                         }
                     }
                 }
-                
-                Section("Day: 47 - ...") {
-                    Group {
-                        NavigationLink(destination: ActivityTracking()) {
-                            Text("Challenge: Activity tracking")
-                        }
+                    Section("Day: 47 - ...") {
+                            NavigationLink(destination: ActivityTracking()) {
+                                Text("Challenge: Activity tracking")
+                            }
                     }
-                }
             }
             .navigationTitle("100 Days of Swift")
         }

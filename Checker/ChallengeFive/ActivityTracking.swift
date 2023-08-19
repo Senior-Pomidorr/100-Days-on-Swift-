@@ -13,31 +13,55 @@ struct ActivityTracking: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(exercises.items) { item in
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(item.name)
-                                .font(.system(size: 24))
-                            
-                            Text(String(item.amounth))
-                                .font(.system(size: 22))
+            VStack {
+                List {
+                    VStack {
+                        HStack {
+                            Spacer()
+                            Image("jobs")
+                                .resizable()
+                                .scaledToFill()
+                                .clipShape(Circle())
+                                .frame(width: 120, height: 120, alignment: .center)
+                                .overlay(Circle().stroke(.black, lineWidth: 3))
+                                .shadow(radius: 2)
+                            Spacer()
                         }
-//                        
-                        Spacer()
-                        
-                        Text(String(item.workoutTime))
-                            .font(.system(size: 24))
+                        Text("Steave Jobs")
+                            .font(.system(.title))
+                        Button (action: {
+                            showAddExercises = true
+                        }, label: {
+                            Text("Add activity")
+                                .font(.headline)
+                                .foregroundColor(.white)
+                        })
+                        .frame(width: 260, height: 55)
+                        .background(.orange)
+                        .clipShape(RoundedRectangle(cornerRadius: 24))
+                        .shadow(radius: 2)
+                        .contentShape(RoundedRectangle(cornerRadius: 24))
                     }
-                    .frame(height: 70)
-                }
-                .onDelete(perform: removeItems)
-            }
-            .toolbar {
-                Button {
-                    showAddExercises = true
-                } label: {
-                    Image(systemName: "plus")
+                    Section {
+                        ForEach(exercises.items) { item in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(item.name)
+                                        .font(.system(size: 24))
+                                    
+                                    Text(String(item.amounth))
+                                        .font(.system(size: 22))
+                                }
+                                Spacer()
+                                
+                                Text(String(item.workoutTime))
+                                    .font(.system(size: 24))
+                            }
+                            .frame(height: 70)
+                            
+                        }
+                        .onDelete(perform: removeItems)
+                    }
                 }
             }
             .sheet(isPresented: $showAddExercises) {
