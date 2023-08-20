@@ -11,6 +11,7 @@
 		0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */; };
 		0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */; };
 		0D7F7CF12A9020380017EF35 /* ShowExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CF02A9020380017EF35 /* ShowExercises.swift */; };
+		0D7F7CF32A91DE610017EF35 /* CupcakeCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CF22A91DE610017EF35 /* CupcakeCorner.swift */; };
 		0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C733B2A64368C00D5325B /* CheckerApp.swift */; };
 		0D8C733E2A64368C00D5325B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C733D2A64368C00D5325B /* ContentView.swift */; };
 		0D8C73402A64368E00D5325B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8C733F2A64368E00D5325B /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		0D7F7CF02A9020380017EF35 /* ShowExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowExercises.swift; sourceTree = "<group>"; };
+		0D7F7CF22A91DE610017EF35 /* CupcakeCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCorner.swift; sourceTree = "<group>"; };
 		0D8C73382A64368C00D5325B /* Checker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D8C733B2A64368C00D5325B /* CheckerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckerApp.swift; sourceTree = "<group>"; };
 		0D8C733D2A64368C00D5325B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 			path = ChallengeFive;
 			sourceTree = "<group>";
 		};
+		0D7F7CF42A91DE6E0017EF35 /* Lesson 7 */ = {
+			isa = PBXGroup;
+			children = (
+				0D7F7CF22A91DE610017EF35 /* CupcakeCorner.swift */,
+			);
+			path = "Lesson 7";
+			sourceTree = "<group>";
+		};
 		0D8C732F2A64368C00D5325B = {
 			isa = PBXGroup;
 			children = (
@@ -118,18 +128,19 @@
 			children = (
 				0D8C733B2A64368C00D5325B /* CheckerApp.swift */,
 				0D8C73652A67091700D5325B /* MainView.swift */,
-				0D8C73672A6716AD00D5325B /* Lession 1 */,
+				0D8C73672A6716AD00D5325B /* Lesson 1 */,
 				0D8C736A2A69929E00D5325B /* Challenge  */,
-				0D8C736D2A69A43600D5325B /* Lession 2 */,
+				0D8C736D2A69A43600D5325B /* Lesson 2 */,
 				0D8C73702A6D518A00D5325B /* ChallengeTwo */,
-				0DE93B8C2A7192FD00648218 /* Lession 3 */,
-				0DE93BB72A74107500648218 /* Lession 4 */,
+				0DE93B8C2A7192FD00648218 /* Lesson 3 */,
+				0DE93BB72A74107500648218 /* Lesson 4 */,
 				0DE93BBC2A7809A300648218 /* ChallengeThree */,
-				0DE93BBF2A7D9D8300648218 /* Lession 5 */,
-				0DE93BC82A7FECE300648218 /* Lession 6 */,
+				0DE93BBF2A7D9D8300648218 /* Lesson 5 */,
+				0DE93BC82A7FECE300648218 /* Lesson 6 */,
 				0DFC88692A8BEB0900FBD841 /* ChallengeFour */,
 				0D7F7CEB2A8FCA2B0017EF35 /* ChallengeFive */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
+				0D7F7CF42A91DE6E0017EF35 /* Lesson 7 */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
 			path = Checker;
@@ -143,12 +154,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0D8C73672A6716AD00D5325B /* Lession 1 */ = {
+		0D8C73672A6716AD00D5325B /* Lesson 1 */ = {
 			isa = PBXGroup;
 			children = (
 				0D8C733D2A64368C00D5325B /* ContentView.swift */,
 			);
-			path = "Lession 1";
+			path = "Lesson 1";
 			sourceTree = "<group>";
 		};
 		0D8C736A2A69929E00D5325B /* Challenge  */ = {
@@ -159,12 +170,12 @@
 			path = "Challenge ";
 			sourceTree = "<group>";
 		};
-		0D8C736D2A69A43600D5325B /* Lession 2 */ = {
+		0D8C736D2A69A43600D5325B /* Lesson 2 */ = {
 			isa = PBXGroup;
 			children = (
 				0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */,
 			);
-			path = "Lession 2";
+			path = "Lesson 2";
 			sourceTree = "<group>";
 		};
 		0D8C73702A6D518A00D5325B /* ChallengeTwo */ = {
@@ -175,22 +186,22 @@
 			path = ChallengeTwo;
 			sourceTree = "<group>";
 		};
-		0DE93B8C2A7192FD00648218 /* Lession 3 */ = {
+		0DE93B8C2A7192FD00648218 /* Lesson 3 */ = {
 			isa = PBXGroup;
 			children = (
 				0DE93B8A2A7192F000648218 /* StepperView.swift */,
 				0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */,
 			);
-			path = "Lession 3";
+			path = "Lesson 3";
 			sourceTree = "<group>";
 		};
-		0DE93BB72A74107500648218 /* Lession 4 */ = {
+		0DE93BB72A74107500648218 /* Lesson 4 */ = {
 			isa = PBXGroup;
 			children = (
 				0DE93BB52A74106A00648218 /* WordScramble.swift */,
 				0DE93BB82A75982D00648218 /* start.txt */,
 			);
-			path = "Lession 4";
+			path = "Lesson 4";
 			sourceTree = "<group>";
 		};
 		0DE93BBC2A7809A300648218 /* ChallengeThree */ = {
@@ -201,7 +212,7 @@
 			path = ChallengeThree;
 			sourceTree = "<group>";
 		};
-		0DE93BBF2A7D9D8300648218 /* Lession 5 */ = {
+		0DE93BBF2A7D9D8300648218 /* Lesson 5 */ = {
 			isa = PBXGroup;
 			children = (
 				0DE93BBD2A7D9D7500648218 /* iExpense.swift */,
@@ -209,10 +220,10 @@
 				0DE93BC02A7E8D9200648218 /* ExpensItem.swift */,
 				0DE93BC22A7E8E0700648218 /* Expenses.swift */,
 			);
-			path = "Lession 5";
+			path = "Lesson 5";
 			sourceTree = "<group>";
 		};
-		0DE93BC82A7FECE300648218 /* Lession 6 */ = {
+		0DE93BC82A7FECE300648218 /* Lesson 6 */ = {
 			isa = PBXGroup;
 			children = (
 				0DE93BC62A7FECBA00648218 /* MoonShot.swift */,
@@ -225,7 +236,7 @@
 				0DE93BCB2A7FFB3D00648218 /* missions.json */,
 				0DE93BCD2A7FFB4200648218 /* astronauts.json */,
 			);
-			path = "Lession 6";
+			path = "Lesson 6";
 			sourceTree = "<group>";
 		};
 		0DFC88692A8BEB0900FBD841 /* ChallengeFour */ = {
@@ -314,6 +325,7 @@
 				0DE93BC52A7EA14A00648218 /* AddView.swift in Sources */,
 				0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */,
 				0DE93BD22A7FFCD800648218 /* Astrounaut.swift in Sources */,
+				0D7F7CF32A91DE610017EF35 /* CupcakeCorner.swift in Sources */,
 				0DE93BBE2A7D9D7500648218 /* iExpense.swift in Sources */,
 				0D8C733E2A64368C00D5325B /* ContentView.swift in Sources */,
 				0DE93BBB2A78099800648218 /* ChallengeThree.swift in Sources */,

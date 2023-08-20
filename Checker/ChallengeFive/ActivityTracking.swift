@@ -18,7 +18,7 @@ struct ActivityTracking: View {
                     VStack {
                         HStack {
                             Spacer()
-                            Image("jobs")
+                            Image("alf")
                                 .resizable()
                                 .scaledToFill()
                                 .clipShape(Circle())
@@ -27,7 +27,7 @@ struct ActivityTracking: View {
                                 .shadow(radius: 2)
                             Spacer()
                         }
-                        Text("Steave Jobs")
+                        Text("Mr. Alf")
                             .font(.system(.title))
                         Button (action: {
                             showAddExercises = true
