@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Order: ObservableObject {
+final class Order: ObservableObject {
     static let types = ["Vanilla", "Starweberry", "Chocolate", "Rainbow"]
     
     @Published var type = 0
@@ -24,5 +24,16 @@ class Order: ObservableObject {
         }
     }
     
+    @Published var name = ""
+    @Published var streetAddress = ""
+    @Published var city = ""
+    @Published var zip = ""
     
+    var hasValidAddress: Bool {
+        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+            return false
+        }
+
+        return true
+    }
 }

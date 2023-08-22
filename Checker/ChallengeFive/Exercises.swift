@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Exercises: ObservableObject {
+final class Exercises: ObservableObject {
     @Published var items = [ExercisesModel]() {
         didSet {
             if let encoded = try? JSONEncoder().encode(items) {

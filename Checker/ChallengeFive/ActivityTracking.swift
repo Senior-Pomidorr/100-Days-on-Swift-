@@ -69,7 +69,7 @@ struct ActivityTracking: View {
             }
         }
     }
-    func removeItems(at offsets: IndexSet) {
+    private func removeItems(at offsets: IndexSet) {
         exercises.items.remove(atOffsets: offsets)
     }
 }

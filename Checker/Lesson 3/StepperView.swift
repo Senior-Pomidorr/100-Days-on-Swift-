@@ -77,7 +77,7 @@ struct StepperView: View {
         }
     }
     
-    func calculateBedtime() {
+    private func calculateBedtime() {
         do {
             let config = MLModelConfiguration()
             let model = try SleepCalculator(configuration: config)

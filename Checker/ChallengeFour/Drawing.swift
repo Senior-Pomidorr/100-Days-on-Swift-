@@ -77,7 +77,7 @@ struct Drawing: View {
         }
     }
     
-    func color(for value: Int, brightness: Double) -> Color {
+    private func color(for value: Int, brightness: Double) -> Color {
            var targetHue = Double(value) / Double(steps) + amount
 
            if targetHue > 1 {

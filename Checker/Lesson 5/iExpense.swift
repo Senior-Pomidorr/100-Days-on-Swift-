@@ -42,7 +42,7 @@ struct iExpense: View {
         }
     }
     
-    func removeItems(at offsets: IndexSet) {
+    private func removeItems(at offsets: IndexSet) {
         expenses.items.remove(atOffsets: offsets)
     }
 }

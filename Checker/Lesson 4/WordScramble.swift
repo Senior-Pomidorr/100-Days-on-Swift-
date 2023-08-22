@@ -130,7 +130,7 @@ struct WordScramble: View {
         return missplledRange.location == NSNotFound
     }
     
-    func wordError(title: String, message: String) {
+    private func wordError(title: String, message: String) {
         errorTitle = title
         errorMessage = message
         showingError = true
