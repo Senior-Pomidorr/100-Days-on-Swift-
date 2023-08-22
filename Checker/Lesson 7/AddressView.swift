@@ -21,7 +21,7 @@ struct AddressView: View {
             
             Section {
                 NavigationLink {
-                    CupcakeCorner(order: order)
+                    CheckoutView(order: order)
                 } label: {
                     Text("Check out")
                 }
