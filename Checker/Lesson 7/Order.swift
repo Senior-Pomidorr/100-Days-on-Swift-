@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Order: ObservableObject {
+final class Order: ObservableObject, Codable {
     
     enum CodingKeys: CodingKey {
         case type, quantity, extraFrosting, addSprinkles, specialRequestEnabled, name, streetAddress, city, zip
@@ -70,7 +70,7 @@ final class Order: ObservableObject {
         zip = try container.decode(String.self, forKey: .zip)
     }
     
-    private func encode(to encoder: Encoder) throws {
+    func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         try container.encode(type, forKey: .type)
         try container.encode(quantity, forKey: .quantity)
