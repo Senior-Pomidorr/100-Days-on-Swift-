@@ -24,11 +24,24 @@ struct ShowExercises: View {
                     .keyboardType(.numbersAndPunctuation)
             }
             .navigationTitle("Add new exercises")
-            .toolbar {
-                Button("Save") {
-                    let item = ExercisesModel(name: name, amounth: Int(amounth) ?? 0, workoutTime: Double(workoutTime) ?? 0)
-                    exercises.items.append(item)
-                    dismiss()
+            .toolbar() {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(role: .cancel) {
+                        dismiss()
+                    } label: {
+                        Text("Cancel")
+                            .bold()
+                    }
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button() {
+                        let item = ExercisesModel(name: name, amounth: Int(amounth) ?? 0, workoutTime: Double(workoutTime) ?? 0)
+                        exercises.items.append(item)
+                        dismiss()
+                    } label: {
+                        Text("Save")
+                            .bold()
+                    }
                 }
             }
         }
