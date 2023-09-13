@@ -23,7 +23,7 @@ struct MainView: View {
                             Text("Project 2: Day 20-22")
                         }
                         NavigationLink(destination: ChallengeTwo()) {
-                            Text("Challenge: The flags game")
+                            Text("Challenge 2: Rock, Paper, Scissors")
                         }
                         NavigationLink(destination: StepperView()) {
                             Text("Project 3: Day 26-28")
@@ -51,6 +51,9 @@ struct MainView: View {
                     }
                     NavigationLink(destination: CupcakeCorner()) {
                         Text("Project 7: Day 49-53")
+                    }
+                    NavigationLink(destination: ProjectEigth()) {
+                        Text("Project 8: Day 53-56")
                     }
                 }
             }
