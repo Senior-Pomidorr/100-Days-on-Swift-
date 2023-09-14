@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0D7D2F8A2AB208B2005166E9 /* ProjectEigth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */; };
-		0D7D2F8E2AB24E87005166E9 /* BookWorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F8C2AB24E87005166E9 /* BookWorm.xcdatamodeld */; };
 		0D7D2F902AB25335005166E9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F8F2AB25335005166E9 /* DataController.swift */; };
+		0D7D2F932AB39CE1005166E9 /* BoomWorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */; };
+		0D7D2F952AB39E7E005166E9 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F942AB39E7E005166E9 /* AddBookView.swift */; };
 		0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */; };
 		0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */; };
 		0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */; };
@@ -49,8 +50,9 @@
 
 /* Begin PBXFileReference section */
 		0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEigth.swift; sourceTree = "<group>"; };
-		0D7D2F8D2AB24E87005166E9 /* BookWorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookWorm.xcdatamodel; sourceTree = "<group>"; };
 		0D7D2F8F2AB25335005166E9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		0D7D2F922AB39CE1005166E9 /* BoomWorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoomWorm.xcdatamodel; sourceTree = "<group>"; };
+		0D7D2F942AB39E7E005166E9 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
 		0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTracking.swift; sourceTree = "<group>"; };
 		0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
@@ -103,9 +105,10 @@
 		0D7D2F8B2AB208BC005166E9 /* Lesson 8 */ = {
 			isa = PBXGroup;
 			children = (
-				0D7D2F8C2AB24E87005166E9 /* BookWorm.xcdatamodeld */,
 				0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */,
 				0D7D2F8F2AB25335005166E9 /* DataController.swift */,
+				0D7D2F942AB39E7E005166E9 /* AddBookView.swift */,
+				0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */,
 			);
 			path = "Lesson 8";
 			sourceTree = "<group>";
@@ -371,14 +374,15 @@
 				0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */,
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
 				0DE93BC72A7FECBA00648218 /* MoonShot.swift in Sources */,
+				0D7D2F932AB39CE1005166E9 /* BoomWorm.xcdatamodeld in Sources */,
 				0D8C73692A671BF200D5325B /* Challenge .swift in Sources */,
 				0DFC88602A8ABD9D00FBD841 /* Color-Theme.swift in Sources */,
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,
 				0DE93BC12A7E8D9200648218 /* ExpensItem.swift in Sources */,
-				0D7D2F8E2AB24E87005166E9 /* BookWorm.xcdatamodeld in Sources */,
 				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
 				0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */,
+				0D7D2F952AB39E7E005166E9 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,13 +587,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0D7D2F8C2AB24E87005166E9 /* BookWorm.xcdatamodeld */ = {
+		0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				0D7D2F8D2AB24E87005166E9 /* BookWorm.xcdatamodel */,
+				0D7D2F922AB39CE1005166E9 /* BoomWorm.xcdatamodel */,
 			);
-			currentVersion = 0D7D2F8D2AB24E87005166E9 /* BookWorm.xcdatamodel */;
-			path = BookWorm.xcdatamodeld;
+			currentVersion = 0D7D2F922AB39CE1005166E9 /* BoomWorm.xcdatamodel */;
+			path = BoomWorm.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
