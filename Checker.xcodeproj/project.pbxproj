@@ -11,6 +11,8 @@
 		0D7D2F902AB25335005166E9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F8F2AB25335005166E9 /* DataController.swift */; };
 		0D7D2F932AB39CE1005166E9 /* BoomWorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */; };
 		0D7D2F952AB39E7E005166E9 /* AddBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F942AB39E7E005166E9 /* AddBookView.swift */; };
+		0D7D2F972AB4F0B7005166E9 /* RaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F962AB4F0B7005166E9 /* RaitingView.swift */; };
+		0D7D2F992AB5D411005166E9 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F982AB5D411005166E9 /* EmojiRatingView.swift */; };
 		0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */; };
 		0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */; };
 		0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */; };
@@ -53,6 +55,8 @@
 		0D7D2F8F2AB25335005166E9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0D7D2F922AB39CE1005166E9 /* BoomWorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoomWorm.xcdatamodel; sourceTree = "<group>"; };
 		0D7D2F942AB39E7E005166E9 /* AddBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookView.swift; sourceTree = "<group>"; };
+		0D7D2F962AB4F0B7005166E9 /* RaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaitingView.swift; sourceTree = "<group>"; };
+		0D7D2F982AB5D411005166E9 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTracking.swift; sourceTree = "<group>"; };
 		0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */,
 				0D7D2F8F2AB25335005166E9 /* DataController.swift */,
 				0D7D2F942AB39E7E005166E9 /* AddBookView.swift */,
+				0D7D2F982AB5D411005166E9 /* EmojiRatingView.swift */,
+				0D7D2F962AB4F0B7005166E9 /* RaitingView.swift */,
 				0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */,
 			);
 			path = "Lesson 8";
@@ -351,6 +357,7 @@
 			files = (
 				0D7F7CF12A9020380017EF35 /* ShowExercises.swift in Sources */,
 				0DE93BD42A7FFEE900648218 /* Bundle-Decodable.swift in Sources */,
+				0D7D2F972AB4F0B7005166E9 /* RaitingView.swift in Sources */,
 				0D8A1E672A94DECF00950B47 /* CheckoutView.swift in Sources */,
 				0DE93BC52A7EA14A00648218 /* AddView.swift in Sources */,
 				0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */,
@@ -376,6 +383,7 @@
 				0DE93BC72A7FECBA00648218 /* MoonShot.swift in Sources */,
 				0D7D2F932AB39CE1005166E9 /* BoomWorm.xcdatamodeld in Sources */,
 				0D8C73692A671BF200D5325B /* Challenge .swift in Sources */,
+				0D7D2F992AB5D411005166E9 /* EmojiRatingView.swift in Sources */,
 				0DFC88602A8ABD9D00FBD841 /* Color-Theme.swift in Sources */,
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,

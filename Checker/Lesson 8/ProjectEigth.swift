@@ -15,7 +15,23 @@ struct ProjectEigth: View {
     
     var body: some View {
         NavigationStack {
-            Text("Count: \(books.count)")
+            List {
+                ForEach(books) { book in
+                    NavigationLink {
+                        Text(book.title ?? "Unknow title")
+                    } label: {
+                        HStack {
+                            EmojiRatingView(rating: book.rating)
+                                .font(.largeTitle)
+                            VStack(alignment: .leading) {
+                                Text(book.title ?? "Unknow title")
+                                Text(book.author ?? "Unknow author")
+                            }
+                        }
+                        
+                    }
+                }
+            }
                 .navigationTitle("BookWarm")
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
