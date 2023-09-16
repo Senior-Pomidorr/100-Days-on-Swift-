@@ -18,7 +18,7 @@ struct ProjectEigth: View {
             List {
                 ForEach(books) { book in
                     NavigationLink {
-                        Text(book.title ?? "Unknow title")
+                        DetailView(book: book)
                     } label: {
                         HStack {
                             EmojiRatingView(rating: book.rating)
