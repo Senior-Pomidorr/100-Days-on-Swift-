@@ -51,7 +51,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "OS_ACTIVITY_MODE = disable"
+            argument = "OS_ACTIVITY_MODE = disable "
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
