@@ -55,6 +55,9 @@ struct MainView: View {
                     NavigationLink(destination: ProjectEigth()) {
                         Text("Project 8: Day 53-56")
                     }
+                    NavigationLink(destination: ProjectNine()) {
+                        Text("Project 8: Day 57-59")
+                    }
                 }
             }
             .navigationTitle("100 Days of Swift")
