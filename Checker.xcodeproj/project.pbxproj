@@ -8,10 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D47F2A62AB9FF1A0058EAFB /* Project 9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2A52AB9FF1A0058EAFB /* Project 9.swift */; };
-		0D47F2AA2AB9FFC30058EAFB /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2A82AB9FFC30058EAFB /* DataModel.xcdatamodeld */; };
 		0D47F2AC2ABA001B0058EAFB /* DataControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2AB2ABA001B0058EAFB /* DataControllerTwo.swift */; };
-		0D47F2AF2ABA32760058EAFB /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2AD2ABA32760058EAFB /* Movie+CoreDataClass.swift */; };
-		0D47F2B02ABA32760058EAFB /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2AE2ABA32760058EAFB /* Movie+CoreDataProperties.swift */; };
 		0D7D2F8A2AB208B2005166E9 /* ProjectEigth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */; };
 		0D7D2F902AB25335005166E9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F8F2AB25335005166E9 /* DataController.swift */; };
 		0D7D2F932AB39CE1005166E9 /* BoomWorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */; };
@@ -58,10 +55,7 @@
 
 /* Begin PBXFileReference section */
 		0D47F2A52AB9FF1A0058EAFB /* Project 9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project 9.swift"; sourceTree = "<group>"; };
-		0D47F2A92AB9FFC30058EAFB /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		0D47F2AB2ABA001B0058EAFB /* DataControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataControllerTwo.swift; sourceTree = "<group>"; };
-		0D47F2AD2ABA32760058EAFB /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		0D47F2AE2ABA32760058EAFB /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEigth.swift; sourceTree = "<group>"; };
 		0D7D2F8F2AB25335005166E9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0D7D2F922AB39CE1005166E9 /* BoomWorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoomWorm.xcdatamodel; sourceTree = "<group>"; };
@@ -121,25 +115,29 @@
 		0D47F2A72AB9FF260058EAFB /* Lession 9 */ = {
 			isa = PBXGroup;
 			children = (
-				0D47F2AD2ABA32760058EAFB /* Movie+CoreDataClass.swift */,
-				0D47F2AE2ABA32760058EAFB /* Movie+CoreDataProperties.swift */,
 				0D47F2A52AB9FF1A0058EAFB /* Project 9.swift */,
 				0D47F2AB2ABA001B0058EAFB /* DataControllerTwo.swift */,
-				0D47F2A82AB9FFC30058EAFB /* DataModel.xcdatamodeld */,
 			);
 			path = "Lession 9";
+			sourceTree = "<group>";
+		};
+		0D47F2B42ABA4B810058EAFB /* DataProject */ = {
+			isa = PBXGroup;
+			children = (
+				0D7D2F8F2AB25335005166E9 /* DataController.swift */,
+				0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */,
+			);
+			path = DataProject;
 			sourceTree = "<group>";
 		};
 		0D7D2F8B2AB208BC005166E9 /* Lesson 8 */ = {
 			isa = PBXGroup;
 			children = (
 				0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */,
-				0D7D2F8F2AB25335005166E9 /* DataController.swift */,
 				0D7D2F942AB39E7E005166E9 /* AddBookView.swift */,
 				0D7D2F982AB5D411005166E9 /* EmojiRatingView.swift */,
 				0D7D2F962AB4F0B7005166E9 /* RaitingView.swift */,
 				0D7D2F9A2AB5E65B005166E9 /* DetailView.swift */,
-				0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */,
 			);
 			path = "Lesson 8";
 			sourceTree = "<group>";
@@ -187,6 +185,7 @@
 			children = (
 				0D8C733B2A64368C00D5325B /* CheckerApp.swift */,
 				0D8C73652A67091700D5325B /* MainView.swift */,
+				0D47F2B42ABA4B810058EAFB /* DataProject */,
 				0D8C73672A6716AD00D5325B /* Lesson 1 */,
 				0D8C736A2A69929E00D5325B /* Challenge  */,
 				0D8C736D2A69A43600D5325B /* Lesson 2 */,
@@ -400,7 +399,6 @@
 				0DFC88682A8BEB0300FBD841 /* Drawing.swift in Sources */,
 				0D7D2F902AB25335005166E9 /* DataController.swift in Sources */,
 				0D8A1E652A938C0900950B47 /* AddressView.swift in Sources */,
-				0D47F2AF2ABA32760058EAFB /* Movie+CoreDataClass.swift in Sources */,
 				0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */,
 				0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */,
 				0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */,
@@ -419,9 +417,7 @@
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,
 				0DE93BC12A7E8D9200648218 /* ExpensItem.swift in Sources */,
 				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
-				0D47F2AA2AB9FFC30058EAFB /* DataModel.xcdatamodeld in Sources */,
 				0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */,
-				0D47F2B02ABA32760058EAFB /* Movie+CoreDataProperties.swift in Sources */,
 				0D7D2F952AB39E7E005166E9 /* AddBookView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -627,16 +623,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		0D47F2A82AB9FFC30058EAFB /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				0D47F2A92AB9FFC30058EAFB /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 0D47F2A92AB9FFC30058EAFB /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

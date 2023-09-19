@@ -8,8 +8,28 @@
 import SwiftUI
 
 struct ProjectNine: View {
+    @Environment(\.managedObjectContext) var mocWizard
+    @FetchRequest(sortDescriptors: []) var wizrds: FetchedResults<Wizard>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            List(wizrds, id: \.self) {wizard in
+                Text(wizard.name ?? "Unknown")
+            }
+            
+            Button("Add") {
+                let wizard = Wizard(context: mocWizard)
+                wizard.name = "Harry Potter"
+            }
+            
+            Button("Save") {
+                do {
+                    try mocWizard.save()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
 }
 

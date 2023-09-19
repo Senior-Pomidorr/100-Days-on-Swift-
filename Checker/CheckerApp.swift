@@ -15,6 +15,7 @@ struct CheckerApp: App {
         WindowGroup {
             MainView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
+
         }
     }
 }
