@@ -56,11 +56,17 @@ struct MainView: View {
                         Text("Project 8: Day 53-56")
                     }
                     NavigationLink(destination: ProjectNine()) {
-                        Text("Project 9: Day 57-59")
+                        Text("Project 9: Day 57")
+                    }
+                    NavigationLink(destination: ProjectTen()) {
+                        Text("Project 10: Day 57")
+                    }
+                    NavigationLink(destination: ProjectEleven()) {
+                        Text("Project 11: Day 58")
                     }
                 }
             }
-            .navigationTitle("100 Days of Swift")
+            .navigationTitle("100 Days of SwiftUI")
         }
     }
 }
