@@ -14,6 +14,11 @@
 		0D47F2BD2ABB33610058EAFB /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2BB2ABB33610058EAFB /* Singer+CoreDataClass.swift */; };
 		0D47F2BE2ABB33610058EAFB /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2BC2ABB33610058EAFB /* Singer+CoreDataProperties.swift */; };
 		0D47F2C02ABB3AE30058EAFB /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2BF2ABB3AE30058EAFB /* FilteredList.swift */; };
+		0D47F2C22ABC741D0058EAFB /* LessionTwelve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2C12ABC741D0058EAFB /* LessionTwelve.swift */; };
+		0D47F2D02ABC75F90058EAFB /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2CC2ABC75F90058EAFB /* Country+CoreDataClass.swift */; };
+		0D47F2D12ABC75F90058EAFB /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2CD2ABC75F90058EAFB /* Country+CoreDataProperties.swift */; };
+		0D47F2D22ABC75F90058EAFB /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2CE2ABC75F90058EAFB /* Candy+CoreDataClass.swift */; };
+		0D47F2D32ABC75F90058EAFB /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2CF2ABC75F90058EAFB /* Candy+CoreDataProperties.swift */; };
 		0D7D2F8A2AB208B2005166E9 /* ProjectEigth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */; };
 		0D7D2F902AB25335005166E9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F8F2AB25335005166E9 /* DataController.swift */; };
 		0D7D2F932AB39CE1005166E9 /* BoomWorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */; };
@@ -66,6 +71,11 @@
 		0D47F2BB2ABB33610058EAFB /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		0D47F2BC2ABB33610058EAFB /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Singer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		0D47F2BF2ABB3AE30058EAFB /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
+		0D47F2C12ABC741D0058EAFB /* LessionTwelve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionTwelve.swift; sourceTree = "<group>"; };
+		0D47F2CC2ABC75F90058EAFB /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0D47F2CD2ABC75F90058EAFB /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0D47F2CE2ABC75F90058EAFB /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0D47F2CF2ABC75F90058EAFB /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEigth.swift; sourceTree = "<group>"; };
 		0D7D2F8F2AB25335005166E9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0D7D2F922AB39CE1005166E9 /* BoomWorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoomWorm.xcdatamodel; sourceTree = "<group>"; };
@@ -159,6 +169,18 @@
 			path = "Lession 11";
 			sourceTree = "<group>";
 		};
+		0D47F2C32ABC742E0058EAFB /* Lession 12 */ = {
+			isa = PBXGroup;
+			children = (
+				0D47F2CC2ABC75F90058EAFB /* Country+CoreDataClass.swift */,
+				0D47F2CD2ABC75F90058EAFB /* Country+CoreDataProperties.swift */,
+				0D47F2CE2ABC75F90058EAFB /* Candy+CoreDataClass.swift */,
+				0D47F2CF2ABC75F90058EAFB /* Candy+CoreDataProperties.swift */,
+				0D47F2C12ABC741D0058EAFB /* LessionTwelve.swift */,
+			);
+			path = "Lession 12";
+			sourceTree = "<group>";
+		};
 		0D7D2F8B2AB208BC005166E9 /* Lesson 8 */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +253,7 @@
 				0D47F2A72AB9FF260058EAFB /* Lession 9 */,
 				0D47F2B72ABB19440058EAFB /* Lession 10 */,
 				0D47F2BA2ABB32E00058EAFB /* Lession 11 */,
+				0D47F2C32ABC742E0058EAFB /* Lession 12 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -434,12 +457,14 @@
 				0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */,
 				0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */,
 				0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */,
+				0D47F2D22ABC75F90058EAFB /* Candy+CoreDataClass.swift in Sources */,
 				0D47F2B92ABB32D50058EAFB /* Project 11.swift in Sources */,
 				0D7D2F8A2AB208B2005166E9 /* ProjectEigth.swift in Sources */,
 				0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */,
 				0D8C73662A67091700D5325B /* MainView.swift in Sources */,
 				0D7D2F9B2AB5E65B005166E9 /* DetailView.swift in Sources */,
 				0D47F2C02ABB3AE30058EAFB /* FilteredList.swift in Sources */,
+				0D47F2D12ABC75F90058EAFB /* Country+CoreDataProperties.swift in Sources */,
 				0D47F2AC2ABA001B0058EAFB /* DataControllerTwo.swift in Sources */,
 				0D47F2B62ABB193B0058EAFB /* Project 10.swift in Sources */,
 				0DE93BC72A7FECBA00648218 /* MoonShot.swift in Sources */,
@@ -448,10 +473,13 @@
 				0D7D2F992AB5D411005166E9 /* EmojiRatingView.swift in Sources */,
 				0DFC88602A8ABD9D00FBD841 /* Color-Theme.swift in Sources */,
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
+				0D47F2D32ABC75F90058EAFB /* Candy+CoreDataProperties.swift in Sources */,
 				0D47F2BD2ABB33610058EAFB /* Singer+CoreDataClass.swift in Sources */,
 				0D47F2A62AB9FF1A0058EAFB /* Project 9.swift in Sources */,
+				0D47F2C22ABC741D0058EAFB /* LessionTwelve.swift in Sources */,
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,
 				0DE93BC12A7E8D9200648218 /* ExpensItem.swift in Sources */,
+				0D47F2D02ABC75F90058EAFB /* Country+CoreDataClass.swift in Sources */,
 				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
 				0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */,
 				0D7D2F952AB39E7E005166E9 /* AddBookView.swift in Sources */,
