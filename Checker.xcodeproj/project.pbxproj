@@ -26,6 +26,8 @@
 		0D7D2F972AB4F0B7005166E9 /* RaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F962AB4F0B7005166E9 /* RaitingView.swift */; };
 		0D7D2F992AB5D411005166E9 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F982AB5D411005166E9 /* EmojiRatingView.swift */; };
 		0D7D2F9B2AB5E65B005166E9 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F9A2AB5E65B005166E9 /* DetailView.swift */; };
+		0D7DC9D82ABE0086004B618F /* LessionThirteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7DC9D72ABE0086004B618F /* LessionThirteen.swift */; };
+		0D7DC9DB2ABE1A17004B618F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7DC9DA2ABE1A17004B618F /* ImagePicker.swift */; };
 		0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */; };
 		0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */; };
 		0D7F7CEF2A8FE7750017EF35 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */; };
@@ -83,6 +85,8 @@
 		0D7D2F962AB4F0B7005166E9 /* RaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaitingView.swift; sourceTree = "<group>"; };
 		0D7D2F982AB5D411005166E9 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		0D7D2F9A2AB5E65B005166E9 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		0D7DC9D72ABE0086004B618F /* LessionThirteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionThirteen.swift; sourceTree = "<group>"; };
+		0D7DC9DA2ABE1A17004B618F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		0D7F7CE92A8FCA210017EF35 /* ActivityTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTracking.swift; sourceTree = "<group>"; };
 		0D7F7CEC2A8FE46E0017EF35 /* ExercisesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		0D7F7CEE2A8FE7750017EF35 /* Exercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
@@ -193,6 +197,15 @@
 			path = "Lesson 8";
 			sourceTree = "<group>";
 		};
+		0D7DC9D92ABE008E004B618F /* Lession 13 */ = {
+			isa = PBXGroup;
+			children = (
+				0D7DC9D72ABE0086004B618F /* LessionThirteen.swift */,
+				0D7DC9DA2ABE1A17004B618F /* ImagePicker.swift */,
+			);
+			path = "Lession 13";
+			sourceTree = "<group>";
+		};
 		0D7F7CEB2A8FCA2B0017EF35 /* ChallengeFive */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +267,7 @@
 				0D47F2B72ABB19440058EAFB /* Lession 10 */,
 				0D47F2BA2ABB32E00058EAFB /* Lession 11 */,
 				0D47F2C32ABC742E0058EAFB /* Lession 12 */,
+				0D7DC9D92ABE008E004B618F /* Lession 13 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -437,6 +451,7 @@
 				0D7F7CF12A9020380017EF35 /* ShowExercises.swift in Sources */,
 				0DE93BD42A7FFEE900648218 /* Bundle-Decodable.swift in Sources */,
 				0D47F2BE2ABB33610058EAFB /* Singer+CoreDataProperties.swift in Sources */,
+				0D7DC9DB2ABE1A17004B618F /* ImagePicker.swift in Sources */,
 				0D7D2F972AB4F0B7005166E9 /* RaitingView.swift in Sources */,
 				0D8A1E672A94DECF00950B47 /* CheckoutView.swift in Sources */,
 				0DE93BC52A7EA14A00648218 /* AddView.swift in Sources */,
@@ -478,6 +493,7 @@
 				0D47F2A62AB9FF1A0058EAFB /* Project 9.swift in Sources */,
 				0D47F2C22ABC741D0058EAFB /* LessionTwelve.swift in Sources */,
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,
+				0D7DC9D82ABE0086004B618F /* LessionThirteen.swift in Sources */,
 				0DE93BC12A7E8D9200648218 /* ExpensItem.swift in Sources */,
 				0D47F2D02ABC75F90058EAFB /* Country+CoreDataClass.swift in Sources */,
 				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
