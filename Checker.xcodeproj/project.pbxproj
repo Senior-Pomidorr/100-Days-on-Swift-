@@ -58,6 +58,7 @@
 		0DE93BCE2A7FFB4200648218 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DE93BCD2A7FFB4200648218 /* astronauts.json */; };
 		0DE93BD22A7FFCD800648218 /* Astrounaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BD12A7FFCD800648218 /* Astrounaut.swift */; };
 		0DE93BD42A7FFEE900648218 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BD32A7FFEE900648218 /* Bundle-Decodable.swift */; };
+		0DF443422AE2F28C0015C5BC /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF443412AE2F28C0015C5BC /* ImageSaver.swift */; };
 		0DFC885E2A8AA39500FBD841 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC885D2A8AA39500FBD841 /* Mission.swift */; };
 		0DFC88602A8ABD9D00FBD841 /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC885F2A8ABD9D00FBD841 /* Color-Theme.swift */; };
 		0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC88632A8BB9F700FBD841 /* MissionView.swift */; };
@@ -118,6 +119,7 @@
 		0DE93BCD2A7FFB4200648218 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
 		0DE93BD12A7FFCD800648218 /* Astrounaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astrounaut.swift; sourceTree = "<group>"; };
 		0DE93BD32A7FFEE900648218 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		0DF443412AE2F28C0015C5BC /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		0DFC885D2A8AA39500FBD841 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		0DFC885F2A8ABD9D00FBD841 /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
 		0DFC88632A8BB9F700FBD841 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				0D7DC9D72ABE0086004B618F /* LessionThirteen.swift */,
+				0DF443412AE2F28C0015C5BC /* ImageSaver.swift */,
 				0D7DC9DA2ABE1A17004B618F /* ImagePicker.swift */,
 			);
 			path = "Lession 13";
@@ -471,6 +474,7 @@
 				0D8A1E652A938C0900950B47 /* AddressView.swift in Sources */,
 				0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */,
 				0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */,
+				0DF443422AE2F28C0015C5BC /* ImageSaver.swift in Sources */,
 				0D7F7CED2A8FE46E0017EF35 /* ExercisesModel.swift in Sources */,
 				0D47F2D22ABC75F90058EAFB /* Candy+CoreDataClass.swift in Sources */,
 				0D47F2B92ABB32D50058EAFB /* Project 11.swift in Sources */,
@@ -630,6 +634,7 @@
 				DEVELOPMENT_TEAM = XF47SHGC5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtred photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -660,6 +665,7 @@
 				DEVELOPMENT_TEAM = XF47SHGC5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtred photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
