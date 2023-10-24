@@ -71,6 +71,9 @@ struct MainView: View {
                         NavigationLink(destination: LessionThirteen()) {
                             Text("Project 13: Day 62-66")
                         }
+                        NavigationLink(destination: LessonFourteen()) {
+                            Text("Project 14: Day 68-70")
+                        }
                     }
                 }
             }
