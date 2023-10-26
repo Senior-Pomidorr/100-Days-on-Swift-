@@ -6,31 +6,41 @@
 //
 
 import SwiftUI
-
+import LocalAuthentication
 
 struct LessonFourteen: View {
-   
-    
+    @State private var isUnlocked = false
     
     var body: some View {
-        Text("Hello")
-            .onTapGesture {
-                let str = "Test message"
-                let url = getDocumentsDirectory().appendingPathComponent("message.txt")
-                
-                do {
-                    try str.write(to: url, atomically: true, encoding: .utf8)
-                    let input = try String(contentsOf: url)
-                    print(input)
-                } catch {
-                    print(error.localizedDescription)
-                }
+        VStack {
+            if isUnlocked {
+                Text("Unclock")
+            } else {
+                Text("Locked")
             }
+        }
+        .onAppear(perform: {
+            aunthenticate()
+        })
     }
     
-    func getDocumentsDirectory() -> URL {
-        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
-        return paths[0]
+    func aunthenticate() {
+        let context = LAContext()
+        var error: NSError?
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+            let reason = "We need to unlock your data"
+            
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, authenficationError in
+                if success {
+                    isUnlocked = true
+                } else {
+                    
+                }
+            }
+        } else {
+            
+        }
     }
 }
 
