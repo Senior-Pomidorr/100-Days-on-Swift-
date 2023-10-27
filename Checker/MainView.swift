@@ -45,7 +45,7 @@ struct MainView: View {
                         }
                     }
                 }
-                Section("Day: 47 - ...") {
+                Section("Day: 47 - 69") {
                     Group {
                         NavigationLink(destination: ActivityTracking()) {
                             Text("Challenge: Activity tracking")
@@ -72,8 +72,13 @@ struct MainView: View {
                             Text("Project 13: Day 62-68")
                         }
                         NavigationLink(destination: LessonFourteen()) {
-                            Text("Project 14: Day 69-70")
+                            Text("Project 14: Day 69")
                         }
+                    }
+                }
+                Section("Day: 70 - ...") {
+                    NavigationLink(destination: LessionFifteen()) {
+                        Text("Project 15: Day 70-70")
                     }
                 }
             }

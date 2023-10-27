@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D2185F72AEC4699006AF93C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2185F62AEC4699006AF93C /* Result.swift */; };
 		0D23B4EA2AE5386B0010575F /* LessionThirteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23B4E92AE5386B0010575F /* LessionThirteen.swift */; };
 		0D23B4ED2AE8475D0010575F /* Lesson Fourteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23B4EC2AE8475D0010575F /* Lesson Fourteen.swift */; };
+		0D38BCC52AEB05BB004CBE1B /* LessionFifteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D38BCC42AEB05BB004CBE1B /* LessionFifteen.swift */; };
+		0D4795902AEB490A0021EAEA /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47958F2AEB490A0021EAEA /* Locations.swift */; };
 		0D47F2A62AB9FF1A0058EAFB /* Project 9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2A52AB9FF1A0058EAFB /* Project 9.swift */; };
 		0D47F2AC2ABA001B0058EAFB /* DataControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2AB2ABA001B0058EAFB /* DataControllerTwo.swift */; };
 		0D47F2B62ABB193B0058EAFB /* Project 10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2B52ABB193B0058EAFB /* Project 10.swift */; };
@@ -21,6 +24,7 @@
 		0D47F2D12ABC75F90058EAFB /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2CD2ABC75F90058EAFB /* Country+CoreDataProperties.swift */; };
 		0D47F2D22ABC75F90058EAFB /* Candy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2CE2ABC75F90058EAFB /* Candy+CoreDataClass.swift */; };
 		0D47F2D32ABC75F90058EAFB /* Candy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47F2CF2ABC75F90058EAFB /* Candy+CoreDataProperties.swift */; };
+		0D7269DA2AEBF8ED00CEA956 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7269D92AEBF8ED00CEA956 /* EditView.swift */; };
 		0D7D2F8A2AB208B2005166E9 /* ProjectEigth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */; };
 		0D7D2F902AB25335005166E9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F8F2AB25335005166E9 /* DataController.swift */; };
 		0D7D2F932AB39CE1005166E9 /* BoomWorm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D7D2F912AB39CE1005166E9 /* BoomWorm.xcdatamodeld */; };
@@ -68,8 +72,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D2185F62AEC4699006AF93C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0D23B4E92AE5386B0010575F /* LessionThirteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionThirteen.swift; sourceTree = "<group>"; };
 		0D23B4EC2AE8475D0010575F /* Lesson Fourteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson Fourteen.swift"; sourceTree = "<group>"; };
+		0D38BCC42AEB05BB004CBE1B /* LessionFifteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionFifteen.swift; sourceTree = "<group>"; };
+		0D47958F2AEB490A0021EAEA /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		0D47F2A52AB9FF1A0058EAFB /* Project 9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project 9.swift"; sourceTree = "<group>"; };
 		0D47F2AB2ABA001B0058EAFB /* DataControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataControllerTwo.swift; sourceTree = "<group>"; };
 		0D47F2B52ABB193B0058EAFB /* Project 10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project 10.swift"; sourceTree = "<group>"; };
@@ -82,6 +89,7 @@
 		0D47F2CD2ABC75F90058EAFB /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		0D47F2CE2ABC75F90058EAFB /* Candy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		0D47F2CF2ABC75F90058EAFB /* Candy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Candy+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		0D7269D92AEBF8ED00CEA956 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		0D7D2F892AB208B2005166E9 /* ProjectEigth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEigth.swift; sourceTree = "<group>"; };
 		0D7D2F8F2AB25335005166E9 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		0D7D2F922AB39CE1005166E9 /* BoomWorm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BoomWorm.xcdatamodel; sourceTree = "<group>"; };
@@ -146,6 +154,17 @@
 				0D23B4EC2AE8475D0010575F /* Lesson Fourteen.swift */,
 			);
 			path = "Lesson 14";
+			sourceTree = "<group>";
+		};
+		0D38BCC62AEB05C4004CBE1B /* Lession 15 */ = {
+			isa = PBXGroup;
+			children = (
+				0D38BCC42AEB05BB004CBE1B /* LessionFifteen.swift */,
+				0D7269D92AEBF8ED00CEA956 /* EditView.swift */,
+				0D2185F62AEC4699006AF93C /* Result.swift */,
+				0D47958F2AEB490A0021EAEA /* Locations.swift */,
+			);
+			path = "Lession 15";
 			sourceTree = "<group>";
 		};
 		0D47F2A72AB9FF260058EAFB /* Lession 9 */ = {
@@ -282,6 +301,7 @@
 				0D47F2C32ABC742E0058EAFB /* Lession 12 */,
 				0D7DC9D92ABE008E004B618F /* Lession 13 */,
 				0D23B4EB2AE538770010575F /* Lesson 14 */,
+				0D38BCC62AEB05C4004CBE1B /* Lession 15 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -417,7 +437,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					0D8C73372A64368C00D5325B = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -480,8 +500,10 @@
 				0DFC88662A8BD61F00FBD841 /* AstronautView.swift in Sources */,
 				0DE93BC32A7E8E0700648218 /* Expenses.swift in Sources */,
 				0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */,
+				0D7269DA2AEBF8ED00CEA956 /* EditView.swift in Sources */,
 				0DFC88682A8BEB0300FBD841 /* Drawing.swift in Sources */,
 				0D7D2F902AB25335005166E9 /* DataController.swift in Sources */,
+				0D2185F72AEC4699006AF93C /* Result.swift in Sources */,
 				0D8A1E652A938C0900950B47 /* AddressView.swift in Sources */,
 				0DFC88642A8BB9F700FBD841 /* MissionView.swift in Sources */,
 				0D7F7CEA2A8FCA210017EF35 /* ActivityTracking.swift in Sources */,
@@ -511,9 +533,11 @@
 				0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */,
 				0DE93BC12A7E8D9200648218 /* ExpensItem.swift in Sources */,
 				0D47F2D02ABC75F90058EAFB /* Country+CoreDataClass.swift in Sources */,
+				0D38BCC52AEB05BB004CBE1B /* LessionFifteen.swift in Sources */,
 				0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */,
 				0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */,
 				0D7D2F952AB39E7E005166E9 /* AddBookView.swift in Sources */,
+				0D4795902AEB490A0021EAEA /* Locations.swift in Sources */,
 				0D23B4ED2AE8475D0010575F /* Lesson Fourteen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,6 +581,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -571,7 +596,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -617,6 +642,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -625,7 +651,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
