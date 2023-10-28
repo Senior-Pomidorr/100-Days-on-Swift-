@@ -81,6 +81,8 @@ struct MainView: View {
                         Text("Project 15: Day 70-70")
                     }
                 }
+                
+               
             }
             .navigationTitle("100 Days of SwiftUI")
         }
