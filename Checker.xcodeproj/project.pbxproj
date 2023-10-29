@@ -680,7 +680,7 @@
 				DEVELOPMENT_TEAM = XF47SHGC5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock the places";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtred photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -712,7 +712,7 @@
 				DEVELOPMENT_TEAM = XF47SHGC5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock the places";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We want to save your filtred photo.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
