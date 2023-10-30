@@ -11,7 +11,7 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             Form {
-                Section("Day's: 1 - 46") {
+                Section(header: Text("Day's: 1 - 46").foregroundColor(.white)) {
                     Group {
                         NavigationLink(destination: ContentView()) {
                             Text("Project 1: Day 16-18")
@@ -46,7 +46,7 @@ struct MainView: View {
                     }
                 }
                 
-                Section("Day's: 47 - 69") {
+                Section(header: Text("Day's: 47 - 69").foregroundColor(.white)) {
                     Group {
                         NavigationLink(destination: ActivityTracking()) {
                             Text("Challenge: Activity tracking")
@@ -78,7 +78,7 @@ struct MainView: View {
                     }
                 }
                 
-                Section("Day's: 70 - ...") {
+                Section(header: Text("Day's: 70 - ...").foregroundColor(.white)) {
                     Group {
                         NavigationLink(destination: LessionFifteen()) {
                             Text("Project 15: Day 70-73")
@@ -92,6 +92,8 @@ struct MainView: View {
                     }
                 }
             }
+            .scrollContentBackground(.hidden)
+            .background(.blue)
             .navigationTitle("100 Days of SwiftUI")
         }
     }

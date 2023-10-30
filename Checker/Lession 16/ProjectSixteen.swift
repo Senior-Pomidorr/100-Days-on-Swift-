@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ProjectSixteen: View {
     let pictures = [
-           "ales-krivec-15949",
-           "galina-n-189483",
-           "kevin-horstmann-141705",
-           "nicolas-tissot-335096"
-       ]
+        "ales-krivec-15949",
+        "galina-n-189483",
+        "kevin-horstmann-141705",
+        "nicolas-tissot-335096"
+    ]
     
     let lebels = [
         "Tulips",
