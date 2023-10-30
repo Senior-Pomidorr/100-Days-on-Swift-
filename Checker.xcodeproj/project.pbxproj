@@ -50,9 +50,9 @@
 		0D8C736C2A69A43100D5325B /* GuessTheFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */; };
 		0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8C736E2A6D518100D5325B /* ChallengeTwo.swift */; };
 		0D8F8B742AEDAACB00D1D6CD /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F8B732AEDAACB00D1D6CD /* FileManager.swift */; };
-		0D8F8B772AF0096C00D1D6CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F8B762AF0096C00D1D6CD /* MainView.swift */; };
 		0D8F8B792AF0099B00D1D6CD /* ProjectSixteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F8B782AF0099B00D1D6CD /* ProjectSixteen.swift */; };
 		0D8F8B7C2AF0196600D1D6CD /* ProjectSeventeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F8B7B2AF0196600D1D6CD /* ProjectSeventeen.swift */; };
+		0D8F8B812AF02DAF00D1D6CD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8F8B802AF02DAF00D1D6CD /* MainView.swift */; };
 		0DE93B8B2A7192F000648218 /* StepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93B8A2A7192F000648218 /* StepperView.swift */; };
 		0DE93B922A72A8BC00648218 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */; };
 		0DE93BB62A74106A00648218 /* WordScramble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE93BB52A74106A00648218 /* WordScramble.swift */; };
@@ -120,9 +120,9 @@
 		0D8C736B2A69A43100D5325B /* GuessTheFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlag.swift; sourceTree = "<group>"; };
 		0D8C736E2A6D518100D5325B /* ChallengeTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTwo.swift; sourceTree = "<group>"; };
 		0D8F8B732AEDAACB00D1D6CD /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
-		0D8F8B762AF0096C00D1D6CD /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainView.swift; path = ../../../.Trash/MainView.swift; sourceTree = "<group>"; };
 		0D8F8B782AF0099B00D1D6CD /* ProjectSixteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSixteen.swift; sourceTree = "<group>"; };
 		0D8F8B7B2AF0196600D1D6CD /* ProjectSeventeen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSeventeen.swift; sourceTree = "<group>"; };
+		0D8F8B802AF02DAF00D1D6CD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0DE93B8A2A7192F000648218 /* StepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperView.swift; sourceTree = "<group>"; };
 		0DE93B912A72A8BC00648218 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		0DE93BB52A74106A00648218 /* WordScramble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordScramble.swift; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				0D8C733B2A64368C00D5325B /* CheckerApp.swift */,
-				0D8F8B762AF0096C00D1D6CD /* MainView.swift */,
+				0D8F8B802AF02DAF00D1D6CD /* MainView.swift */,
 				0D47F2B42ABA4B810058EAFB /* DataProject */,
 				0D8C73672A6716AD00D5325B /* Lesson 1 */,
 				0D8C736A2A69929E00D5325B /* Challenge  */,
@@ -545,6 +545,7 @@
 				0D8C736F2A6D518100D5325B /* ChallengeTwo.swift in Sources */,
 				0D7D2F9B2AB5E65B005166E9 /* DetailView.swift in Sources */,
 				0D47F2C02ABB3AE30058EAFB /* FilteredList.swift in Sources */,
+				0D8F8B812AF02DAF00D1D6CD /* MainView.swift in Sources */,
 				0D47F2D12ABC75F90058EAFB /* Country+CoreDataProperties.swift in Sources */,
 				0D47F2AC2ABA001B0058EAFB /* DataControllerTwo.swift in Sources */,
 				0D47F2B62ABB193B0058EAFB /* Project 10.swift in Sources */,
@@ -554,7 +555,6 @@
 				0D7D2F992AB5D411005166E9 /* EmojiRatingView.swift in Sources */,
 				0DFC88602A8ABD9D00FBD841 /* Color-Theme.swift in Sources */,
 				0D8C733C2A64368C00D5325B /* CheckerApp.swift in Sources */,
-				0D8F8B772AF0096C00D1D6CD /* MainView.swift in Sources */,
 				0D8F8B7C2AF0196600D1D6CD /* ProjectSeventeen.swift in Sources */,
 				0D47F2D32ABC75F90058EAFB /* Candy+CoreDataProperties.swift in Sources */,
 				0D47F2BD2ABB33610058EAFB /* Singer+CoreDataClass.swift in Sources */,
