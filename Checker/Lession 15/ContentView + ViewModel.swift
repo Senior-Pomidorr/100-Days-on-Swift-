@@ -62,8 +62,8 @@ extension LessionFifteen {
                 context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, error in
                     if success {
                         Task { @MainActor in
-                                self.isUnlocked = true
-                            }
+                            self.isUnlocked = true
+                        }
                     } else {
                         // error
                     }
