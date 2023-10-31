@@ -78,7 +78,7 @@ struct MainView: View {
                     }
                 }
                 
-                Section(header: Text("Day's: 70 - ...").foregroundColor(.white)) {
+                Section(header: Text("Day's: 70 - 82").foregroundColor(.white)) {
                     Group {
                         NavigationLink(destination: LessionFifteen()) {
                             Text("Project 15: Day 70-73")
@@ -89,6 +89,9 @@ struct MainView: View {
                         NavigationLink(destination: ProjectSeventeen()) {
                             Text("Project 17: Day 78-80")
                         }
+                        NavigationLink(destination: ProjectSeventeen()) {
+                            Text("Project 18: Day 81-82")
+                        }
                     }
                 }
             }
@@ -96,6 +99,11 @@ struct MainView: View {
             .background(.blue)
             .navigationTitle("100 Days of SwiftUI")
         }
+    }
+    init() {
+        let navBarAppearance = UINavigationBar.appearance()
+        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D15B1612AF14C6C0098B348 /* ProjectEighteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D15B1602AF14C6C0098B348 /* ProjectEighteen.swift */; };
 		0D2185F72AEC4699006AF93C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2185F62AEC4699006AF93C /* Result.swift */; };
 		0D2185F92AED926C006AF93C /* ContentView + ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2185F82AED926C006AF93C /* ContentView + ViewModel.swift */; };
 		0D23B4EA2AE5386B0010575F /* LessionThirteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D23B4E92AE5386B0010575F /* LessionThirteen.swift */; };
@@ -76,6 +77,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D15B1602AF14C6C0098B348 /* ProjectEighteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectEighteen.swift; sourceTree = "<group>"; };
 		0D2185F62AEC4699006AF93C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0D2185F82AED926C006AF93C /* ContentView + ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView + ViewModel.swift"; sourceTree = "<group>"; };
 		0D23B4E92AE5386B0010575F /* LessionThirteen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessionThirteen.swift; sourceTree = "<group>"; };
@@ -156,6 +158,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D15B1622AF14C760098B348 /* Lession 18 */ = {
+			isa = PBXGroup;
+			children = (
+				0D15B1602AF14C6C0098B348 /* ProjectEighteen.swift */,
+			);
+			path = "Lession 18";
+			sourceTree = "<group>";
+		};
 		0D23B4EB2AE538770010575F /* Lesson 14 */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +324,7 @@
 				0D38BCC62AEB05C4004CBE1B /* Lession 15 */,
 				0D8F8B7A2AF009A100D1D6CD /* Lession 16 */,
 				0D8F8B7D2AF0196F00D1D6CD /* Lession 17 */,
+				0D15B1622AF14C760098B348 /* Lession 18 */,
 				0D8C733F2A64368E00D5325B /* Assets.xcassets */,
 				0D8C73412A64368E00D5325B /* Preview Content */,
 			);
@@ -514,6 +525,7 @@
 				0DE93BD42A7FFEE900648218 /* Bundle-Decodable.swift in Sources */,
 				0D47F2BE2ABB33610058EAFB /* Singer+CoreDataProperties.swift in Sources */,
 				0D7DC9DB2ABE1A17004B618F /* ImagePicker.swift in Sources */,
+				0D15B1612AF14C6C0098B348 /* ProjectEighteen.swift in Sources */,
 				0D7D2F972AB4F0B7005166E9 /* RaitingView.swift in Sources */,
 				0D8A1E672A94DECF00950B47 /* CheckoutView.swift in Sources */,
 				0D8F8B792AF0099B00D1D6CD /* ProjectSixteen.swift in Sources */,
